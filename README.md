@@ -1,6 +1,6 @@
 # Home-Alert-System
 
-The Home-Alert-System is a small, cost-effective embedded system designed to improve home or small office safety by monitoring for intrusions and unusual environmental conditions. **Please note: This is designed as a "leave the home" system**, intended to be armed when the premises are unoccupied. 
+The Home-Alert-System is a small, cost-effective embedded system designed to improve home or small office safety by monitoring for intrusions and unusual environmental conditions. Designed to be armed when leaving the home, either manually or by phone based location data. 
 
 When sensor thresholds are exceeded, the system provides real-time safety monitoring by triggering alerts via notifications or alarms to a central base station.
 
