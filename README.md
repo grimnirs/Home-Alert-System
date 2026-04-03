@@ -9,7 +9,7 @@ When sensor thresholds are exceeded, the system provides real-time safety monito
 The system is capable of detecting:
 * **Movement:** Identifying potential intruders.
 * **Sounds:** Detecting unusual audio activity.
-* **Smoke or Gas Leakage:** Alerting users to environmental hazards.
+* **Sound-detection:** Alerting users to noise in home.
 
 ## System Architecture
 
@@ -28,9 +28,8 @@ The project utilizes **Raspberry Pi Pico 2** boards to separate the sensing logi
 ## Hardware & Sensors
 
 The following sensors are integrated into the Sensor Node:
-
 | Sensor | Function | Connection Type | Notes |
 | :--- | :--- | :--- | :--- |
 | **HC-SR04** | Motion / Object proximity | Digital | Detects physical intrusions. Operates at 5V (requires a voltage divider for the Pico 2). |
 | **BME680** | Smoke, gas, temperature, pressure, humidity | Digital (I2C) | Primary monitor for environmental hazards and air quality. |
-| **MCP9700AE** | Analog temperature | Analog | Used to cross-check and validate BME680 temperature readings. |
+| **Waveshare Sound Sensor (LM386)** | Ambient sound and noise detection | Analog & Digital | Detects unusual sounds. Provides analog output for sound levels and digital output for threshold triggers. Operates at 3.3V-5.3V. |
