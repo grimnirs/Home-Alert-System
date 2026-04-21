@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/Users/majanyberg/Home-Alert-System/pico-sdk/tools/pioasm
+source_dir=/Users/ojmc/.pico-sdk/sdk/2.2.0/tools/pioasm
 work_dir=
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/majanyberg/Home-Alert-System/pico-sdk
+# Install script for directory: /Users/ojmc/.pico-sdk/sdk/2.2.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,27 +34,27 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/opt/homebrew/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/Users/ojmc/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/Home-Alert-System/sensor_node/build/pico-sdk/tools/cmake_install.cmake")
+  include("/Users/ojmc/UNI/Programmering_Inbyggda_system/Project/Home-Alert-System/sensor_node/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/Home-Alert-System/sensor_node/build/pico-sdk/src/cmake_install.cmake")
+  include("/Users/ojmc/UNI/Programmering_Inbyggda_system/Project/Home-Alert-System/sensor_node/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/Home-Alert-System/sensor_node/build/pico-sdk/docs/cmake_install.cmake")
+  include("/Users/ojmc/UNI/Programmering_Inbyggda_system/Project/Home-Alert-System/sensor_node/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/majanyberg/Home-Alert-System/sensor_node/build/pico-sdk/install_local_manifest.txt"
+  file(WRITE "/Users/ojmc/UNI/Programmering_Inbyggda_system/Project/Home-Alert-System/sensor_node/build/pico-sdk/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

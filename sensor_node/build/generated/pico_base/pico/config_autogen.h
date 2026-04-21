@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/Users/majanyberg/Home-Alert-System/pico-sdk/src/boards/include/boards/pico.h"
-#include "/Users/majanyberg/Home-Alert-System/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "/Users/ojmc/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico.h"
+#include "/Users/ojmc/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
