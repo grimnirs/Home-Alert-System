@@ -1,26 +1,50 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "hardware/adc.h"
+#include "hardware/gpio.h"
 
-#define SOUND_AO_GPIO 26
-#define SOUND_ADC_CH  0
+#define TRIG_PIN 3
+#define ECHO_PIN 2
 
-int main(void) {
+int main()
+{
     stdio_init_all();
     sleep_ms(2000);
-    printf("LM386 sound sensor test\n");
+    printf("HC-SR04 Distance Sensor Test\n");
 
-    adc_init();
-    adc_gpio_init(SOUND_AO_GPIO);
-    adc_select_input(SOUND_ADC_CH);
+    gpio_init(TRIG_PIN);
+    gpio_set_dir(TRIG_PIN, GPIO_OUT);
 
-    absolute_time_t next_print = make_timeout_time_ms(1000);
+    gpio_init(ECHO_PIN);
+    gpio_set_dir(ECHO_PIN, GPIO_IN);
 
-    while (true) {
-        if (absolute_time_diff_us(get_absolute_time(), next_print) <= 0) {
-            printf("AO=%u\n", adc_read());
-            next_print = make_timeout_time_ms(1000);
-        }
-        sleep_ms(5);
+    while (true)
+    {
+        // Send 10us trigger pulse
+        gpio_put(TRIG_PIN, 0);
+        sleep_us(2);
+        gpio_put(TRIG_PIN, 1);
+        sleep_us(10);
+        gpio_put(TRIG_PIN, 0);
+
+        // Wait for echo to go HIGH
+        while (gpio_get(ECHO_PIN) == 0)
+            ;
+
+        absolute_time_t start = get_absolute_time();
+
+        // Wait for echo to go LOW
+        while (gpio_get(ECHO_PIN) == 1);
+
+        absolute_time_t end = get_absolute_time();
+
+        // Calculate time difference in microseconds
+        int64_t duration = absolute_time_diff_us(start, end);
+
+        // Convert to distance (cm)
+        float distance = duration / 58.0;
+
+        printf("Distance: %.2f cm\n", distance);
+
+        sleep_ms(500);
     }
 }
