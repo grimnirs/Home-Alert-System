@@ -1,0 +1,11 @@
+# Copyright (c) 2025 Group 8
+# SPDX-License-Identifier: Apache-2.0
+
+config SENSOR_NODE
+	bool "Custom Sensor Node UART driver"
+	default y
+	depends on SENSOR && UART_INTERRUPT_DRIVEN
+	help
+	  Enable the custom sensor driver that receives data from
+	  the Home Security Sensor Node over UART. The driver implements
+	  the standard Zephyr Sensor API (fetch / channel_get).

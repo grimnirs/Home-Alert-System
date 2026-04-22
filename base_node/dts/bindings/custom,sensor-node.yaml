@@ -1,0 +1,18 @@
+# Copyright (c) 2025 Group 8
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Custom sensor driver that receives sensor data from a remote Sensor Node
+  over UART. The Sensor Node sends a 10-byte frame containing temperature,
+  gas, sound, distance, and alarm status data.
+
+compatible: "custom,sensor-node"
+
+include: sensor-device.yaml
+
+properties:
+  uart-dev:
+    type: phandle
+    required: true
+    description: |
+      Reference to the UART device used to communicate with the Sensor Node.
