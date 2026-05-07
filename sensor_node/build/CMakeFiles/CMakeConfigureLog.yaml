@@ -20,12 +20,10 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -48,18 +46,12 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
-      - "/Users/majanyberg/.local/bin/uname"
       - "/Users/majanyberg/.rbenv/shims/uname"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/uname"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/uname"
       - "/usr/local/bin/uname"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/uname"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/opt/homebrew/bin/uname"
@@ -71,12 +63,10 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -103,14 +93,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -140,12 +125,10 @@ events:
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -172,14 +155,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -209,12 +187,10 @@ events:
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -241,14 +217,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -278,12 +249,10 @@ events:
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objcopy"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -310,14 +279,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -347,12 +311,10 @@ events:
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -379,14 +341,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "message-v1"
@@ -399,11 +356,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:21 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Program used to build from build.ninja files."
+    description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
       SearchAppBundle: "FIRST"
@@ -413,16 +370,14 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ninja-build"
-      - "ninja"
-      - "samu"
+      - "gmake"
+      - "make"
+      - "smake"
     candidate_directories:
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -445,46 +400,54 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
-      - "/Users/majanyberg/.local/bin/ninja-build"
-      - "/Users/majanyberg/.local/bin/ninja"
-      - "/Users/majanyberg/.local/bin/samu"
-      - "/Users/majanyberg/.rbenv/shims/ninja-build"
-      - "/Users/majanyberg/.rbenv/shims/ninja"
-      - "/Users/majanyberg/.rbenv/shims/samu"
-      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/ninja-build"
-      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/ninja"
-      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/samu"
-      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/ninja-build"
-      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/ninja"
-      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/samu"
-      - "/usr/local/bin/ninja-build"
-      - "/usr/local/bin/ninja"
-      - "/usr/local/bin/samu"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/ninja-build"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/ninja"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/samu"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/samu"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja"
-      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/samu"
-      - "/opt/homebrew/bin/ninja-build"
-    found: "/opt/homebrew/bin/ninja"
+      - "/Users/majanyberg/.rbenv/shims/gmake"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/gmake"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/opt/local/bin/gmake"
+      - "/opt/local/sbin/gmake"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/opt/pmk/env/global/bin/gmake"
+      - "/opt/X11/bin/gmake"
+      - "/Library/Apple/usr/bin/gmake"
+      - "/Library/TeX/texbin/gmake"
+      - "/usr/local/share/dotnet/gmake"
+      - "/Users/majanyberg/.dotnet/tools/gmake"
+      - "/Users/majanyberg/development/flutter/bin/gmake"
+      - "/Users/majanyberg/.local/bin/gmake"
+      - "/Users/majanyberg/.rbenv/shims/make"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/make"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/make"
+      - "/usr/local/bin/make"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
+      - "/opt/homebrew/bin/make"
+      - "/opt/homebrew/sbin/make"
+      - "/opt/local/bin/make"
+      - "/opt/local/sbin/make"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -511,14 +474,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -549,12 +507,10 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -581,14 +537,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -649,12 +600,10 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -681,14 +630,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -735,12 +679,10 @@ events:
       - "ar"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -763,19 +705,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ar"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -802,14 +739,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -834,12 +766,10 @@ events:
       - "ranlib"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -862,19 +792,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -901,14 +826,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -933,12 +853,10 @@ events:
       - "strip"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -961,19 +879,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-strip"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1000,14 +913,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1032,12 +940,10 @@ events:
       - "ld"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1060,19 +966,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ld"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1099,14 +1000,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1131,12 +1027,10 @@ events:
       - "nm"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1159,19 +1053,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-nm"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1198,14 +1087,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1230,12 +1114,10 @@ events:
       - "readelf"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1258,19 +1140,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-readelf"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1297,14 +1174,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1329,12 +1201,10 @@ events:
       - "dlltool"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1357,18 +1227,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-dlltool"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-dlltool"
       - "/usr/local/bin/arm-none-eabi-dlltool"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-dlltool"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-dlltool"
       - "/opt/homebrew/bin/arm-none-eabi-dlltool"
@@ -1391,17 +1256,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-dlltool"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-dlltool"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-dlltool"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-dlltool"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-dlltool"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/dlltool"
-      - "/Users/majanyberg/.local/bin/dlltool"
       - "/Users/majanyberg/.rbenv/shims/dlltool"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/dlltool"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/dlltool"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/opt/homebrew/bin/dlltool"
@@ -1424,19 +1284,14 @@ events:
       - "/usr/local/share/dotnet/dlltool"
       - "/Users/majanyberg/.dotnet/tools/dlltool"
       - "/Users/majanyberg/development/flutter/bin/dlltool"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/dlltool"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/dlltool"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/dlltool"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/dlltool"
+      - "/Users/majanyberg/.local/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1463,14 +1318,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1495,12 +1345,10 @@ events:
       - "addr2line"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1523,19 +1371,14 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-addr2line"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1562,14 +1405,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1594,12 +1432,10 @@ events:
       - "tapi"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1622,18 +1458,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-tapi"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-tapi"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-tapi"
       - "/usr/local/bin/arm-none-eabi-tapi"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-tapi"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-tapi"
       - "/opt/homebrew/bin/arm-none-eabi-tapi"
@@ -1656,17 +1487,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-tapi"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-tapi"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-tapi"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-tapi"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-tapi"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-tapi"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-tapi"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/tapi"
-      - "/Users/majanyberg/.local/bin/tapi"
       - "/Users/majanyberg/.rbenv/shims/tapi"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/tapi"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/tapi"
       - "/usr/local/bin/tapi"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/tapi"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/opt/homebrew/bin/tapi"
@@ -1689,19 +1515,14 @@ events:
       - "/usr/local/share/dotnet/tapi"
       - "/Users/majanyberg/.dotnet/tools/tapi"
       - "/Users/majanyberg/development/flutter/bin/tapi"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/tapi"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/tapi"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/tapi"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/tapi"
+      - "/Users/majanyberg/.local/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1728,14 +1549,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1762,12 +1578,10 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1790,18 +1604,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-14.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-14.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14.2"
@@ -1824,17 +1633,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-14"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14"
@@ -1857,17 +1661,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar14"
       - "/usr/local/bin/arm-none-eabi-gcc-ar14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar14"
@@ -1890,19 +1689,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1929,14 +1723,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1963,12 +1752,10 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1991,18 +1778,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-14.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14.2"
@@ -2025,17 +1807,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-14"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14"
@@ -2058,17 +1835,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib14"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib14"
@@ -2091,19 +1863,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2130,14 +1897,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2168,12 +1930,10 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2200,14 +1960,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2268,12 +2023,10 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2300,14 +2053,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2356,12 +2104,10 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -2384,18 +2130,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-14.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-14.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14.2"
@@ -2418,17 +2159,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-14.2"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-14"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14"
@@ -2451,17 +2187,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar14"
       - "/usr/local/bin/arm-none-eabi-gcc-ar14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar14"
@@ -2484,19 +2215,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2523,14 +2249,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2557,12 +2278,10 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -2585,18 +2304,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-14.2"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14.2"
@@ -2619,17 +2333,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-14.2"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-14"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14"
@@ -2652,17 +2361,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib14"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib14"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib14"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib14"
@@ -2685,19 +2389,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib14"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib14"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2724,14 +2423,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2771,12 +2465,10 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -2799,18 +2491,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
@@ -2833,17 +2520,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ar-"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
@@ -2866,19 +2548,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ar-"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2905,14 +2582,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2939,12 +2611,10 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -2967,18 +2637,13 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
@@ -3001,17 +2666,12 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
@@ -3034,19 +2694,14 @@ events:
       - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/arm-none-eabi-gcc-ranlib-"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3073,14 +2728,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -3092,8 +2742,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-sx5jTi"
-      binary: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-sx5jTi"
+      source: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-zybG9Z"
+      binary: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-zybG9Z"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
       CMAKE_C_FLAGS_DEBUG: "-Og -g"
@@ -3104,10 +2754,12 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-sx5jTi'
+        Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-zybG9Z'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_359e2
-        [1/2] /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fcc0d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fcc0d.dir/build.make CMakeFiles/cmTC_fcc0d.dir/build
+        Building C object CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -3115,8 +2767,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_359e2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccHftyFm.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fcc0d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccZq6D9j.s
         GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -3133,13 +2785,14 @@ events:
          /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 37d23b2e3347d18c1231e07805cbe085
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccHftyFm.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccZq6D9j.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o -o cmTC_359e2.elf   && :
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_fcc0d.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcc0d.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
         COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
@@ -3150,10 +2803,11 @@ events:
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_359e2.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_359e2.elf.'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc6X36or.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_359e2.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fcc0d.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_fcc0d.elf.'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccnnoqRY.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_fcc0d.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o
         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_359e2.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_359e2.elf.'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fcc0d.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_fcc0d.elf.'
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o -o cmTC_fcc0d.elf
         
       exitCode: 0
   -
@@ -3186,10 +2840,12 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-sx5jTi']
+        ignore line: [Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-zybG9Z']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_359e2]
-        ignore line: [[1/2] /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fcc0d/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fcc0d.dir/build.make CMakeFiles/cmTC_fcc0d.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -3197,8 +2853,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_359e2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccHftyFm.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fcc0d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccZq6D9j.s]
         ignore line: [GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -3215,13 +2871,14 @@ events:
         ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 37d23b2e3347d18c1231e07805cbe085]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccHftyFm.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccZq6D9j.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o -o cmTC_359e2.elf   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_fcc0d.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcc0d.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
@@ -3232,17 +2889,17 @@ events:
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_359e2.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_359e2.elf.']
-        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc6X36or.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_359e2.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fcc0d.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_fcc0d.elf.']
+        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccnnoqRY.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_fcc0d.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o]
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc6X36or.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccnnoqRY.res] ==> ignore
           arg [--sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_359e2.elf] ==> ignore
+          arg [cmTC_fcc0d.elf] ==> ignore
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
@@ -3251,10 +2908,11 @@ events:
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_359e2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o] ==> ignore
         ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_359e2.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_359e2.elf.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_fcc0d.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_fcc0d.elf.']
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_fcc0d.dir/CMakeCCompilerABI.c.o -o cmTC_fcc0d.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
@@ -3279,8 +2937,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-LLORS2"
-      binary: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-LLORS2"
+      source: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-wRYn3V"
+      binary: "/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-wRYn3V"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
       CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
@@ -3292,10 +2950,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-LLORS2'
+        Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-wRYn3V'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_44185
-        [1/2] /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f5d52/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f5d52.dir/build.make CMakeFiles/cmTC_f5d52.dir/build
+        Building CXX object CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
         Target: arm-none-eabi
@@ -3303,8 +2963,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_44185.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccSH4G2D.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f5d52.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccm9w5m4.s
         GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -3327,13 +2987,14 @@ events:
          /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 27b9f5562618372de894011fc251f42d
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccSH4G2D.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccm9w5m4.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_44185.elf   && :
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f5d52.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5d52.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
         COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
@@ -3344,10 +3005,11 @@ events:
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_44185.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_44185.elf.'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccDzAWs9.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_44185.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_f5d52.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_f5d52.elf.'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccQPekXc.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_f5d52.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o
         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_44185.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_44185.elf.'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_f5d52.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_f5d52.elf.'
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f5d52.elf
         
       exitCode: 0
   -
@@ -3386,10 +3048,12 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-LLORS2']
+        ignore line: [Change Dir: '/Users/majanyberg/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-wRYn3V']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_44185]
-        ignore line: [[1/2] /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f5d52/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f5d52.dir/build.make CMakeFiles/cmTC_f5d52.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
         ignore line: [Target: arm-none-eabi]
@@ -3397,8 +3061,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_44185.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccSH4G2D.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f5d52.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccm9w5m4.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -3421,13 +3085,14 @@ events:
         ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 27b9f5562618372de894011fc251f42d]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccSH4G2D.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccm9w5m4.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_44185.elf   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f5d52.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5d52.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
@@ -3438,17 +3103,17 @@ events:
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_44185.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_44185.elf.']
-        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccDzAWs9.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_44185.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_f5d52.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_f5d52.elf.']
+        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccQPekXc.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_f5d52.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o]
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccDzAWs9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccQPekXc.res] ==> ignore
           arg [--sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_44185.elf] ==> ignore
+          arg [cmTC_f5d52.elf] ==> ignore
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
@@ -3457,10 +3122,11 @@ events:
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_44185.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
         ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_44185.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_44185.elf.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_f5d52.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_f5d52.elf.']
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_f5d52.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f5d52.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
@@ -3653,12 +3319,10 @@ events:
     found: "/opt/homebrew/Frameworks/Python.framework/Versions/3.14/bin/python3.14"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3685,14 +3349,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3725,12 +3384,10 @@ events:
     names:
       - "doxygen"
     candidate_directories:
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -3753,11 +3410,7 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3783,12 +3436,10 @@ events:
       - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
       - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
     searched_directories:
-      - "/Users/majanyberg/.local/bin/doxygen"
       - "/Users/majanyberg/.rbenv/shims/doxygen"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/doxygen"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/doxygen"
       - "/usr/local/bin/doxygen"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/doxygen"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/doxygen"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/doxygen"
       - "/opt/homebrew/bin/doxygen"
@@ -3811,11 +3462,7 @@ events:
       - "/usr/local/share/dotnet/doxygen"
       - "/Users/majanyberg/.dotnet/tools/doxygen"
       - "/Users/majanyberg/development/flutter/bin/doxygen"
-      - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/doxygen"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/doxygen"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/doxygen"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/doxygen"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/doxygen"
+      - "/Users/majanyberg/.local/bin/doxygen"
       - "/usr/local/bin/doxygen"
       - "/usr/local/sbin/doxygen"
       - "/usr/local/doxygen"
@@ -3843,12 +3490,10 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3875,14 +3520,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3915,12 +3555,10 @@ events:
     names:
       - "dot"
     candidate_directories:
-      - "/Users/majanyberg/.local/bin/"
       - "/Users/majanyberg/.rbenv/shims/"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
       - "/usr/local/bin/"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -3943,11 +3581,7 @@ events:
       - "/usr/local/share/dotnet/"
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
-      - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/"
-      - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool/"
-      - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin/"
-      - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1/"
-      - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts/"
+      - "/Users/majanyberg/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3977,23 +3611,19 @@ events:
       - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
       - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
     searched_directories:
-      - "/Users/majanyberg/.local/bin/dot"
       - "/Users/majanyberg/.rbenv/shims/dot"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/dot"
       - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/dot"
       - "/usr/local/bin/dot"
-      - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/dot"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dot"
       - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dot"
     found: "/opt/homebrew/bin/dot"
     search_context:
       ENV{PATH}:
-        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.rbenv/shims"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
         - "/usr/local/bin"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4020,14 +3650,9 @@ events:
         - "/Users/majanyberg/development/flutter/bin"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/opt/homebrew/Caskroom/flutter/3.29.2/flutter/bin/cache/dart-sdk/bin/"
-        - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin"
-        - "/Users/majanyberg/.pico-sdk/picotool/2.2.0-a4/picotool"
-        - "/Users/majanyberg/.pico-sdk/cmake/v3.31.5/bin"
-        - "/Users/majanyberg/.pico-sdk/ninja/v1.12.1"
+        - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
-        - "/Users/majanyberg/.vscode/extensions/vscjava.vscode-java-debug-0.59.0/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:

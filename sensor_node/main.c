@@ -6,10 +6,10 @@
 #include "hardware/uart.h"
 
 // UART
-#define UART_ID uart0
-#define BAUD_RATE 115200
-#define UART_TX_PIN 0
-#define UART_RX_PIN 1
+// #define UART_ID uart0
+// #define BAUD_RATE 115200
+// #define UART_TX_PIN 0
+// #define UART_RX_PIN 1
 
 // Distance sensor
 #define TRIG_PIN 3
@@ -41,12 +41,12 @@
 #define SOUND_INTERVAL 200
 
 // alarm thresholds
-#define TEMP_MAX 35.0f       // degrees Celsius
-#define TEMP_MIN 5.0f        // degrees Celsius
-#define PRESSURE_MAX 1050.0f // hPa
-#define PRESSURE_MIN 950.0f  // hPa
-#define HUMIDITY_MAX 80.0f   // %
-#define HUMIDITY_MIN 20.0f   // %
+#define TEMP_MAX 35.0f           // degrees Celsius
+#define TEMP_MIN 5.0f            // degrees Celsius
+#define HUMIDITY_MAX 80.0f       // %
+#define HUMIDITY_MIN 20.0f       // %
+// TODO: Add a lower limit to mimic wispering
+#define SOUND_ALARM_THRESHOLD 45 // sound_i = raw ADC >> 4, range 0..63
 
 // calib struct
 typedef struct
@@ -54,16 +54,6 @@ typedef struct
     uint16_t par_t1;
     int16_t par_t2;
     int8_t par_t3;
-    uint16_t par_p1;
-    int16_t par_p2;
-    int8_t par_p3;
-    int16_t par_p4;
-    int16_t par_p5;
-    int8_t par_p6;
-    int8_t par_p7;
-    int16_t par_p8;
-    int16_t par_p9;
-    uint16_t par_p10;
     uint16_t par_h1;
     uint16_t par_h2;
     int8_t par_h3;
@@ -78,7 +68,6 @@ typedef struct
 typedef struct
 {
     float temperature;
-    float pressure;
     float humidity;
 } bme680_data_t;
 
@@ -104,44 +93,51 @@ int32_t calc_temp(int32_t adc_t, bme_calib *c)
     c->t_fine = var2 + var3;
     return (c->t_fine * 5 + 128) >> 8;
 }
-
-uint32_t calc_press(int32_t adc_p, bme_calib *c)
+static uint32_t calc_hum(int32_t adc_h, bme_calib *c, int32_t t_fine)
 {
-    int32_t var1 = (c->t_fine >> 1) - 64000;
-    int32_t var2 = ((((var1 >> 2) * (var1 >> 2)) >> 11) * (int32_t)c->par_p6) >> 2;
-    var2 += ((var1 * (int32_t)c->par_p5) << 1);
-    var2 = (var2 >> 2) + ((int32_t)c->par_p4 << 16);
-    var1 = (((((var1 >> 2) * (var1 >> 2)) >> 13) * ((int32_t)c->par_p3 << 5)) >> 3) + (((int32_t)c->par_p2 * var1) >> 1);
-    var1 >>= 18;
-    var1 = ((32768 + var1) * (int32_t)c->par_p1) >> 15;
-    if (var1 == 0)
-        return 0;
+    int32_t temp_scaled, var1, var2, var3, var4, var5, var6, hum_comp;
 
-    uint32_t p = ((1048576 - adc_p) - (var2 >> 12)) * 3125;
-    p = (p < 0x80000000) ? ((p << 1) / var1) : ((p / var1) * 2);
+    // 1. Calculate temperature in degC scaled by 100
+    // This matches the datasheet's temp_scaled = (int32_t)temp_comp
+    temp_scaled = (((int32_t)t_fine * 5) + 128) >> 8;
 
-    var1 = ((int32_t)c->par_p9 * (int32_t)(((p >> 3) * (p >> 3)) >> 13)) >> 12;
-    var2 = ((int32_t)(p >> 2) * (int32_t)c->par_p8) >> 13;
-    int32_t var3 = ((int32_t)(p >> 8) * (p >> 8) * (p >> 8) * (int32_t)c->par_p10) >> 17;
+    // 2. var1 calculation
+    var1 = (int32_t)adc_h -
+           ((int32_t)((int32_t)c->par_h1 << 4)) -
+           (((temp_scaled * (int32_t)c->par_h3) / ((int32_t)100)) >> 1);
 
-    return p + ((var1 + var2 + var3 + ((int32_t)c->par_p7 << 7)) >> 4);
-}
+    // 3. var2 calculation
+    var2 = ((int32_t)c->par_h2 *
+            (((temp_scaled * (int32_t)c->par_h4) / ((int32_t)100)) +
+             (((temp_scaled * ((temp_scaled * (int32_t)c->par_h5) / ((int32_t)100))) >> 6) / ((int32_t)100)) +
+             ((int32_t)(1 << 14)))) >>
+           10;
 
-uint32_t calc_hum(int32_t adc_h, bme_calib *c)
-{
-    int32_t temp = (c->t_fine * 5 + 128) >> 8;
-    int32_t v1 = adc_h - ((int32_t)c->par_h1 << 4) - (((temp * (int32_t)c->par_h3) / 100) >> 1);
-    int32_t v2 = ((int32_t)c->par_h2 *
-                  (((temp * (int32_t)c->par_h4) / 100) +
-                   (((temp * ((temp * (int32_t)c->par_h5) / 100)) >> 6) / 100) +
-                   (1 << 14))) >>
-                 10;
-    int32_t h = (v1 * v2) >> 10;
-    if (h > 100000)
-        h = 100000;
-    if (h < 0)
-        h = 0;
-    return h;
+    // 4. var3 calculation
+    var3 = var1 * var2;
+
+    // 5. var4 calculation
+    var4 = (((int32_t)c->par_h6 << 7) +
+            ((temp_scaled * (int32_t)c->par_h7) / ((int32_t)100))) >>
+           4;
+
+    // 6. var5 calculation (Notice the shift >> 10 is outside the square)
+    var5 = ((var3 >> 14) * (var3 >> 14)) >> 10;
+
+    // 7. var6 calculation
+    var6 = (var4 * var5) >> 1;
+
+    // 8. Final humidity calculation (hum_comp)
+    // Matches: (((var3 + var6) >> 10) * 1000) >> 12
+    hum_comp = (((var3 + var6) >> 10) * ((int32_t)1000)) >> 12;
+
+    // 9. Clamping to [0% - 100%] in milli-percent
+    if (hum_comp > 100000)
+        hum_comp = 100000;
+    else if (hum_comp < 0)
+        hum_comp = 0;
+
+    return (uint32_t)hum_comp;
 }
 
 // READ CALIB
@@ -151,26 +147,19 @@ void read_calib(bme_calib *c)
     read_reg(0x89, c1, 25);
     read_reg(0xE1, c2, 16);
 
-    c->par_t1 = (c2[9] << 8) | c2[8];
-    c->par_t2 = (c1[2] << 8) | c1[1];
-    c->par_t3 = c1[3];
-    c->par_p1 = (c1[6] << 8) | c1[5];
-    c->par_p2 = (c1[8] << 8) | c1[7];
-    c->par_p3 = c1[9];
-    c->par_p4 = (c1[12] << 8) | c1[11];
-    c->par_p5 = (c1[14] << 8) | c1[13];
-    c->par_p6 = c1[15];
-    c->par_p7 = c1[16];
-    c->par_p8 = (c1[19] << 8) | c1[18];
-    c->par_p9 = (c1[21] << 8) | c1[20];
-    c->par_p10 = c1[22];
-    c->par_h1 = (c2[2] << 4) | (c2[1] & 0x0F);
-    c->par_h2 = (c2[0] << 4) | (c2[1] >> 4);
-    c->par_h3 = c2[3];
-    c->par_h4 = (c2[4] << 4) | (c2[5] & 0x0F);
-    c->par_h5 = (c2[5] >> 4) | (c2[6] << 4);
-    c->par_h6 = c2[7];
-    c->par_h7 = c2[8];
+    // TEMPERATURE (From Table 1 in previous datasheet sections)
+    c->par_t1 = (uint16_t)((c2[9] << 8) | c2[8]); // 0xE9 / 0xEA
+    c->par_t2 = (int16_t)((c1[2] << 8) | c1[1]);  // 0x8A / 0x8B
+    c->par_t3 = (int8_t)c1[3];                    // 0x8C
+
+    // HUMIDITY (From Table 13)
+    c->par_h1 = (uint16_t)(((uint16_t)c2[2] << 4) | (c2[1] & 0x0F)); // 0xE2 / 0xE3
+    c->par_h2 = (uint16_t)(((uint16_t)c2[0] << 4) | (c2[1] >> 4));   // 0xE1 / 0xE2
+    c->par_h3 = (int8_t)c2[3];                                       // 0xE4
+    c->par_h4 = (int8_t)c2[4];                                       // 0xE5
+    c->par_h5 = (int8_t)c2[5];                                       // 0xE6
+    c->par_h6 = (int8_t)c2[6];                                       // 0xE7
+    c->par_h7 = (int8_t)c2[7];                                       // 0xE8
 }
 
 // sensor functions (one for each)
@@ -227,25 +216,22 @@ bme680_data_t read_bme680(bme_calib *cal)
     uint8_t d[10];
     read_reg(REG_DATA_START, d, 10);
 
-    int32_t adc_p = (d[2] << 12) | (d[3] << 4) | (d[4] >> 4);
     int32_t adc_t = (d[5] << 12) | (d[6] << 4) | (d[7] >> 4);
-    int32_t adc_h = (d[8] << 8) | d[9];
+    uint16_t adc_h = (uint16_t)(((uint32_t)d[8] << 8) | (uint32_t)d[9]);
 
     float temp = calc_temp(adc_t, cal) / 100.0f;
-    float press = calc_press(adc_p, cal) / 100.0f;
-    float hum = calc_hum(adc_h, cal) / 1000.0f;
+    float hum = calc_hum(adc_h, cal, cal->t_fine) / 1000.0f;
 
-    printf("T: %.2f C | P: %.2f hPa | H: %.2f %%\n", temp, press, hum);
-    bme680_data_t data = {temp, press, hum};
+    printf("T: %.2f C | H: %.2f %%\n", temp, hum);
+    bme680_data_t data = {temp, hum};
     return data;
 }
 // UART
-
-void send_uart_frame(float temp, float pressure, float humidity, uint16_t sound, uint16_t dist)
+/*
+void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist)
 {
 
     int16_t temp_i = (int16_t)(temp * 100);
-    int16_t press_i = (int16_t)(pressure * 100);
     int16_t hum_i = (int16_t)(humidity * 100);
     uint8_t sound_i = sound >> 4;
 
@@ -256,28 +242,25 @@ void send_uart_frame(float temp, float pressure, float humidity, uint16_t sound,
         alarm |= (1 << 1);
     if (sound_i > 200)
         alarm |= (1 << 2);
-    if (pressure > PRESSURE_MAX || pressure < PRESSURE_MIN)
-        alarm |= (1 << 3);
     if (humidity > HUMIDITY_MAX || humidity < HUMIDITY_MIN)
         alarm |= (1 << 4);
 
-    uint8_t frame[12];
+    uint8_t frame[10];
 
     frame[0] = 0xAA;
     frame[1] = temp_i >> 8;
     frame[2] = temp_i;
-    frame[3] = press_i >> 8;
-    frame[4] = press_i;
-    frame[5] = hum_i >> 8;
-    frame[6] = hum_i;
-    frame[7] = sound_i;
-    frame[8] = dist >> 8;
-    frame[9] = dist;
-    frame[10] = alarm;
-    frame[11] = 0x55;
+    frame[3] = hum_i >> 8;
+    frame[4] = hum_i;
+    frame[5] = sound_i;
+    frame[6] = dist >> 8;
+    frame[7] = dist;
+    frame[8] = alarm;
+    frame[9] = 0x55;
 
-    uart_write_blocking(UART_ID, frame, 12);
+    uart_write_blocking(UART_ID, frame, 10);
 }
+*/
 
 int main()
 {
@@ -322,10 +305,9 @@ int main()
     absolute_time_t t_sound = make_timeout_time_ms(SOUND_INTERVAL);
     absolute_time_t t_bme = make_timeout_time_ms(BME_INTERVAL);
 
-    uint16_t dist = 0;
+    float dist = 0;
     uint16_t sound = 0;
     float temp = 0;
-    float pressure = 0;
     float hum = 0;
 
     while (true)
@@ -334,7 +316,10 @@ int main()
         if (absolute_time_diff_us(get_absolute_time(), t_ultra) <= 0)
         {
             dist = read_distance();
-            printf("Distance: %.2f cm\n", dist);
+            if (dist > 0)
+                printf("Distance: %.2f cm\n", dist);
+            else
+                printf("Distance: ERROR (timeout)\n");
             t_ultra = make_timeout_time_ms(DIST_INTERVAL);
         }
 
@@ -349,12 +334,50 @@ int main()
         {
             bme680_data_t bme680 = read_bme680(&cal);
             temp = bme680.temperature;
-            pressure = bme680.pressure;
             hum = bme680.humidity;
             t_bme = make_timeout_time_ms(BME_INTERVAL);
         }
 
-        send_uart_frame(temp, pressure, hum, sound, dist);
+        // UART data that would be sent:
+        int16_t temp_i = (int16_t)(temp * 100);
+        int16_t hum_i = (int16_t)(hum * 100);
+        uint8_t sound_i = sound >> 4;
+        uint16_t dist_i = (uint16_t)dist;
+
+        uint8_t alarm = 0;
+        if (dist < 50)
+            alarm |= (1 << 0);
+        if (temp > TEMP_MAX || temp < TEMP_MIN)
+            alarm |= (1 << 1);
+        if (sound_i > SOUND_ALARM_THRESHOLD)
+            alarm |= (1 << 2);
+        if (hum > HUMIDITY_MAX || hum < HUMIDITY_MIN)
+            alarm |= (1 << 4);
+
+        // Display alarm status
+        printf("\nALARM: %s\n", alarm ? "ON" : "OFF");
+        if (alarm)
+        {
+            printf("  Triggered by:");
+            if (alarm & (1 << 0))
+                printf(" Distance<%dcm", 50);
+            if (alarm & (1 << 1))
+                printf(" Temp(%.1f°C)", temp);
+            if (alarm & (1 << 2))
+                printf(" Sound(%u)", sound_i);
+            if (alarm & (1 << 4))
+                printf(" Humidity(%.1f%%)", hum);
+            printf("\n");
+        }
+
+        printf("\n=== UART Frame Data ===\n");
+        printf("Raw Values - Temp: %d, Humidity: %d\n", temp_i, hum_i);
+        printf("Sound: %u (raw %u), Distance: %u cm\n", sound_i, sound, dist_i);
+        printf("Alarm Flags: 0x%02X\n", alarm);
+        printf("Frame: 0xAA %02X %02X %02X %02X %02X %02X %02X 0x55\n",
+               temp_i >> 8, temp_i, hum_i >> 8, hum_i,
+               sound_i, dist_i >> 8, dist_i, alarm);
+        printf("======================\n\n");
 
         sleep_ms(500);
     }
