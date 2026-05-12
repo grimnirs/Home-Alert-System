@@ -15,7 +15,7 @@
  *   5. sensor_channel_get() returns whichever channel the application asks for.
  */
 
-#define DT_DRV_COMPAT custom_sensor_node
+#define DT_DRV_COMPAT zephyr_sensor_node
 
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
@@ -31,30 +31,32 @@ LOG_MODULE_REGISTER(sensor_node, CONFIG_SENSOR_LOG_LEVEL);
 /* ------------------------------------------------------------------ */
 /*  Per-instance run-time data                                        */
 /* ------------------------------------------------------------------ */
-struct sensor_node_data {
+struct sensor_node_data
+{
     /* UART device handle (resolved once during init) */
     const struct device *uart_dev;
 
     /* --- ISR ring state --- */
-    uint8_t  rx_buf[SENSOR_NODE_FRAME_LEN];  /* assembling frame   */
-    uint8_t  rx_idx;                          /* write position     */
+    uint8_t rx_buf[SENSOR_NODE_FRAME_LEN]; /* assembling frame   */
+    uint8_t rx_idx;                        /* write position     */
 
     /* --- Double buffer: ISR writes, fetch reads --- */
-    uint8_t  ready_buf[SENSOR_NODE_FRAME_LEN];
-    struct k_sem frame_sem;                   /* given by ISR       */
+    uint8_t ready_buf[SENSOR_NODE_FRAME_LEN];
+    struct k_sem frame_sem; /* given by ISR       */
 
     /* --- Parsed sensor values (filled by fetch) --- */
-    int16_t  temperature;   /* scaled value from sensor node        */
-    uint16_t gas;           /* raw / threshold index                */
-    uint8_t  sound;         /* ADC 0-255                            */
-    uint16_t distance;      /* cm                                   */
-    uint8_t  alarm_status;  /* bit0=motion, bit1=gas, bit2=sound    */
+    int16_t temperature;  /* scaled value from sensor node        */
+    uint16_t humidity;    /* scaled humidity ×100                  */
+    uint8_t sound;        /* ADC 0-255                            */
+    uint16_t distance;    /* cm                                   */
+    uint8_t alarm_status; /* bit0=motion, bit1=temp, bit2=sound, bit4=humidity */
 };
 
 /* ------------------------------------------------------------------ */
 /*  Per-instance config (from devicetree, constant)                   */
 /* ------------------------------------------------------------------ */
-struct sensor_node_config {
+struct sensor_node_config
+{
     const struct device *uart_dev;
 };
 
@@ -70,31 +72,41 @@ static void sensor_node_uart_isr(const struct device *uart_dev,
 
     /* Drain the FIFO one byte at a time */
     while (uart_irq_update(uart_dev) &&
-           uart_irq_rx_ready(uart_dev)) {
+           uart_irq_rx_ready(uart_dev))
+    {
 
-        if (uart_fifo_read(uart_dev, &byte, 1) != 1) {
+        if (uart_fifo_read(uart_dev, &byte, 1) != 1)
+        {
             continue;
         }
 
-        if (data->rx_idx == 0) {
+        if (data->rx_idx == 0)
+        {
             /* Waiting for start marker */
-            if (byte == SENSOR_NODE_FRAME_START) {
+            if (byte == SENSOR_NODE_FRAME_START)
+            {
                 data->rx_buf[0] = byte;
                 data->rx_idx = 1;
             }
             /* else: discard stray bytes */
-        } else {
+        }
+        else
+        {
             data->rx_buf[data->rx_idx++] = byte;
 
-            if (data->rx_idx == SENSOR_NODE_FRAME_LEN) {
+            if (data->rx_idx == SENSOR_NODE_FRAME_LEN)
+            {
                 /* Got a full-length frame – validate end marker */
-                if (byte == SENSOR_NODE_FRAME_END) {
+                if (byte == SENSOR_NODE_FRAME_END)
+                {
                     /* Copy to ready buffer and signal */
                     memcpy(data->ready_buf, data->rx_buf,
                            SENSOR_NODE_FRAME_LEN);
                     k_sem_give(&data->frame_sem);
                     LOG_DBG("Valid frame received");
-                } else {
+                }
+                else
+                {
                     LOG_WRN("Frame end marker mismatch: 0x%02x", byte);
                 }
                 /* Reset whether valid or not */
@@ -113,14 +125,15 @@ static int sensor_node_sample_fetch(const struct device *dev,
     struct sensor_node_data *data = dev->data;
     int ret;
 
-    ARG_UNUSED(chan);  /* we always fetch the whole frame */
+    ARG_UNUSED(chan); /* we always fetch the whole frame */
 
     /*
      * Wait up to 2 seconds for a new frame.  If nothing arrives the
      * application gets -EAGAIN and can decide what to do.
      */
-    ret = k_sem_take(&data->frame_sem, K_MSEC(2000));
-    if (ret < 0) {
+    ret = k_sem_take(&data->frame_sem, K_SECONDS(2));
+    if (ret < 0)
+    {
         LOG_WRN("No frame received within timeout");
         return -EAGAIN;
     }
@@ -128,14 +141,14 @@ static int sensor_node_sample_fetch(const struct device *dev,
     /* Parse the ready buffer (big-endian, matching sensor node packing) */
     const uint8_t *f = data->ready_buf;
 
-    data->temperature  = (int16_t)((f[1] << 8) | f[2]);
-    data->gas          = (uint16_t)((f[3] << 8) | f[4]);
-    data->sound        = f[5];
-    data->distance     = (uint16_t)((f[6] << 8) | f[7]);
+    data->temperature = (int16_t)((f[1] << 8) | f[2]);
+    data->humidity = (uint16_t)((f[3] << 8) | f[4]);
+    data->sound = f[5];
+    data->distance = (uint16_t)((f[6] << 8) | f[7]);
     data->alarm_status = f[8];
 
-    LOG_DBG("Parsed: temp=%d gas=%u sound=%u dist=%u alarm=0x%02x",
-            data->temperature, data->gas, data->sound,
+    LOG_DBG("Parsed: temp=%d humidity=%u sound=%u dist=%u alarm=0x%02x",
+            data->temperature, data->humidity, data->sound,
             data->distance, data->alarm_status);
 
     return 0;
@@ -150,7 +163,8 @@ static int sensor_node_channel_get(const struct device *dev,
 {
     struct sensor_node_data *data = dev->data;
 
-    switch ((int)chan) {
+    switch ((int)chan)
+    {
 
     case SENSOR_CHAN_AMBIENT_TEMP:
         /*
@@ -166,9 +180,9 @@ static int sensor_node_channel_get(const struct device *dev,
         val->val2 = (data->temperature % 100) * 10000;
         break;
 
-    case SENSOR_CHAN_GAS_RAW:
-        val->val1 = data->gas;
-        val->val2 = 0;
+    case SENSOR_CHAN_HUMIDITY:
+        val->val1 = data->humidity / 100;
+        val->val2 = (data->humidity % 100) * 10000;
         break;
 
     case SENSOR_CHAN_SOUND:
@@ -207,7 +221,8 @@ static int sensor_node_init(const struct device *dev)
 
     k_sem_init(&data->frame_sem, 0, 1);
 
-    if (!device_is_ready(data->uart_dev)) {
+    if (!device_is_ready(data->uart_dev))
+    {
         LOG_ERR("UART device not ready");
         return -ENODEV;
     }
@@ -229,28 +244,28 @@ static int sensor_node_init(const struct device *dev)
 /* ================================================================== */
 static const struct sensor_driver_api sensor_node_api = {
     .sample_fetch = sensor_node_sample_fetch,
-    .channel_get  = sensor_node_channel_get,
+    .channel_get = sensor_node_channel_get,
 };
 
 /* ================================================================== */
 /*  Instantiation macro (one instance per devicetree node)            */
 /* ================================================================== */
-#define SENSOR_NODE_INST(inst)                                          \
-                                                                        \
-    static struct sensor_node_data sensor_node_data_##inst;             \
-                                                                        \
-    static const struct sensor_node_config sensor_node_cfg_##inst = {   \
-        .uart_dev = DEVICE_DT_GET(DT_INST_PHANDLE(inst, uart_dev)),    \
-    };                                                                  \
-                                                                        \
-    SENSOR_DEVICE_DT_INST_DEFINE(                                       \
-        inst,                                                           \
-        sensor_node_init,                                               \
-        NULL,                           /* pm */                        \
-        &sensor_node_data_##inst,                                       \
-        &sensor_node_cfg_##inst,                                        \
-        POST_KERNEL,                                                    \
-        CONFIG_SENSOR_INIT_PRIORITY,                                    \
+#define SENSOR_NODE_INST(inst)                                        \
+                                                                      \
+    static struct sensor_node_data sensor_node_data_##inst;           \
+                                                                      \
+    static const struct sensor_node_config sensor_node_cfg_##inst = { \
+        .uart_dev = DEVICE_DT_GET(DT_INST_PHANDLE(inst, uart_dev)),   \
+    };                                                                \
+                                                                      \
+    SENSOR_DEVICE_DT_INST_DEFINE(                                     \
+        inst,                                                         \
+        sensor_node_init,                                             \
+        NULL, /* pm */                                                \
+        &sensor_node_data_##inst,                                     \
+        &sensor_node_cfg_##inst,                                      \
+        POST_KERNEL,                                                  \
+        CONFIG_SENSOR_INIT_PRIORITY,                                  \
         &sensor_node_api);
 
 DT_INST_FOREACH_STATUS_OKAY(SENSOR_NODE_INST)

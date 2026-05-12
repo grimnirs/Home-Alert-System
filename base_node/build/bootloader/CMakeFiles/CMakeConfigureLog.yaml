@@ -1,0 +1,3102 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/.venv/bin/uname"
+      - "/Users/majanyberg/.rbenv/shims/uname"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/uname"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/uname"
+      - "/usr/local/bin/uname"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/opt/local/bin/uname"
+      - "/opt/local/sbin/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Darwin - 25.2.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/.venv/bin/ninja-build"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/ninja"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/samu"
+      - "/Users/majanyberg/.rbenv/shims/ninja-build"
+      - "/Users/majanyberg/.rbenv/shims/ninja"
+      - "/Users/majanyberg/.rbenv/shims/samu"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/ninja-build"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/ninja"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/samu"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/ninja-build"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/ninja"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/samu"
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/samu"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/samu"
+      - "/opt/homebrew/bin/ninja-build"
+    found: "/opt/homebrew/bin/ninja"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-ar"
+      - "ar"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-strip"
+      - "strip"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-ld"
+      - "ld"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ld"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-nm"
+      - "nm"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/local/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-dlltool"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-dlltool"
+      - "/opt/local/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/local/sbin/arm-zephyr-eabi-dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-dlltool"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/sbin/arm-zephyr-eabi-dlltool"
+      - "/sbin/arm-zephyr-eabi-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/X11/bin/arm-zephyr-eabi-dlltool"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-dlltool"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-dlltool"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/dlltool"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/dlltool"
+      - "/Users/majanyberg/.rbenv/shims/dlltool"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/dlltool"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/opt/local/bin/dlltool"
+      - "/opt/local/sbin/dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/opt/pmk/env/global/bin/dlltool"
+      - "/opt/X11/bin/dlltool"
+      - "/Library/Apple/usr/bin/dlltool"
+      - "/Library/TeX/texbin/dlltool"
+      - "/usr/local/share/dotnet/dlltool"
+      - "/Users/majanyberg/.dotnet/tools/dlltool"
+      - "/Users/majanyberg/development/flutter/bin/dlltool"
+      - "/Users/majanyberg/.local/bin/dlltool"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-tapi"
+      - "/usr/local/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-tapi"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-tapi"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-tapi"
+      - "/opt/local/bin/arm-zephyr-eabi-tapi"
+      - "/opt/local/sbin/arm-zephyr-eabi-tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-tapi"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-tapi"
+      - "/usr/bin/arm-zephyr-eabi-tapi"
+      - "/bin/arm-zephyr-eabi-tapi"
+      - "/usr/sbin/arm-zephyr-eabi-tapi"
+      - "/sbin/arm-zephyr-eabi-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-tapi"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-tapi"
+      - "/opt/X11/bin/arm-zephyr-eabi-tapi"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-tapi"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-tapi"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-tapi"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/tapi"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/tapi"
+      - "/Users/majanyberg/.rbenv/shims/tapi"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/tapi"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/opt/local/bin/tapi"
+      - "/opt/local/sbin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/opt/pmk/env/global/bin/tapi"
+      - "/opt/X11/bin/tapi"
+      - "/Library/Apple/usr/bin/tapi"
+      - "/Library/TeX/texbin/tapi"
+      - "/usr/local/share/dotnet/tapi"
+      - "/Users/majanyberg/.dotnet/tools/tapi"
+      - "/Users/majanyberg/development/flutter/bin/tapi"
+      - "/Users/majanyberg/.local/bin/tapi"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar12"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CC"
+      - "arm-zephyr-eabi-c++"
+      - "arm-zephyr-eabi-g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/CC"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar12"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:8 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MLGszV"
+      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MLGszV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MLGszV'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b9cc0
+        [1/2] /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+        Target: arm-zephyr-eabi
+        Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin20.6.0 --host=aarch64-build_apple-darwin20.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.6' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array --enable-threads=c11 --enable-libstdcxx-time=c11 --enable-libstdcxx-threads
+        Thread model: c11
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (Zephyr SDK 0.16.6) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/'
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1 -quiet -v -iprefix /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b9cc0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc5xeJMv.s
+        GNU C17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include
+        End of search list.
+        GNU C17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: de9721113f0ba1e06a9941279caaa254
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/'
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc5xeJMv.s
+        GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.6) 2.38
+        COMPILER_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/
+        LIBRARY_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_b9cc0.a && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_b9cc0.a  CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_b9cc0.a && /opt/homebrew/bin/cmake -E touch libcmTC_b9cc0.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        end of search list found
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/sys-include]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include]
+        implicit include dirs: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/sys-include;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MLGszV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b9cc0]
+        ignore line: [[1/2] /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc]
+        ignore line: [Target: arm-zephyr-eabi]
+        ignore line: [Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin20.6.0 --host=aarch64-build_apple-darwin20.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.6' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array --enable-threads=c11 --enable-libstdcxx-time=c11 --enable-libstdcxx-threads]
+        ignore line: [Thread model: c11]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (Zephyr SDK 0.16.6) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/']
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1 -quiet -v -iprefix /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b9cc0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc5xeJMv.s]
+        ignore line: [GNU C17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: de9721113f0ba1e06a9941279caaa254]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/']
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc5xeJMv.s]
+        ignore line: [GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.6) 2.38]
+        ignore line: [COMPILER_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_b9cc0.a && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_b9cc0.a  CMakeFiles/cmTC_b9cc0.dir/CMakeCCompilerABI.c.obj && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_b9cc0.a && /opt/homebrew/bin/cmake -E touch libcmTC_b9cc0.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MAxgzF"
+      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MAxgzF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MAxgzF'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_53693
+        [1/2] /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++   -v -o CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++
+        Target: arm-zephyr-eabi
+        Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin20.6.0 --host=aarch64-build_apple-darwin20.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.6' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array --enable-threads=c11 --enable-libstdcxx-time=c11 --enable-libstdcxx-threads
+        Thread model: c11
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (Zephyr SDK 0.16.6) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/'
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1plus -quiet -v -iprefix /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_53693.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccwl2umG.s
+        GNU C++17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"
+        ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include
+        End of search list.
+        GNU C++17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: ba49cac51502cfc5a739786714b27495
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/'
+         /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccwl2umG.s
+        GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.6) 2.38
+        COMPILER_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/
+        LIBRARY_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_53693.a && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_53693.a  CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_53693.a && /opt/homebrew/bin/cmake -E touch libcmTC_53693.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+          add: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        end of search list found
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0/backward]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/sys-include]
+        collapse include dir [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include] ==> [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include]
+        implicit include dirs: [/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0/backward;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/sys-include;/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-MAxgzF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_53693]
+        ignore line: [[1/2] /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++   -v -o CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++]
+        ignore line: [Target: arm-zephyr-eabi]
+        ignore line: [Configured with: /Volumes/Workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=aarch64-build_apple-darwin20.6.0 --host=aarch64-build_apple-darwin20.6.0 --target=arm-zephyr-eabi --prefix=/Volumes/Workspace/output/arm-zephyr-eabi --exec_prefix=/Volumes/Workspace/output/arm-zephyr-eabi --with-local-prefix=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/Volumes/Workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 0.16.6' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/Volumes/Workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array --enable-threads=c11 --enable-libstdcxx-time=c11 --enable-libstdcxx-threads]
+        ignore line: [Thread model: c11]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (Zephyr SDK 0.16.6) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/']
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/cc1plus -quiet -v -iprefix /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/ -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_53693.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccwl2umG.s]
+        ignore line: [GNU C++17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/arm-zephyr-eabi]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include/c++/12.2.0/backward]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/include-fixed]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/sys-include]
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Zephyr SDK 0.16.6) version 12.2.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: ba49cac51502cfc5a739786714b27495]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/']
+        ignore line: [ /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccwl2umG.s]
+        ignore line: [GNU assembler version 2.38 (arm-zephyr-eabi) using BFD version (Zephyr SDK 0.16.6) 2.38]
+        ignore line: [COMPILER_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../libexec/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/:/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_53693.a && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_53693.a  CMakeFiles/cmTC_53693.dir/CMakeCXXCompilerABI.cpp.obj && /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_53693.a && /opt/homebrew/bin/cmake -E touch libcmTC_53693.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:9 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 0.16.6) 12.2.0
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:9 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ar-"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "CMakeLists.txt:9 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/"
+      - "/Users/majanyberg/.rbenv/shims/"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/"
+      - "/usr/local/bin/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pmk/env/global/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/majanyberg/.dotnet/tools/"
+      - "/Users/majanyberg/development/flutter/bin/"
+      - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.rbenv/shims/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.gem/ruby/3.2.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/pmk/env/global/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/X11/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/TeX/texbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/share/dotnet/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.dotnet/tools/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/development/flutter/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-zephyr-eabi-gcc-ranlib-"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+...

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

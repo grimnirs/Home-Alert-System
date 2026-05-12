@@ -1,0 +1,3 @@
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/boot_stage2.dir
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/edit_cache.dir
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/CMakeFiles/rebuild_cache.dir

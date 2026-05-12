@@ -1,0 +1,168 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node
+-- CMake version: 4.2.3
+-- Found Python3: /Users/majanyberg/zephyrproject/.venv/bin/python3.14 (found suitable version "3.14.3", minimum required is "3.8") found components: Interpreter
+-- Cache files will be written to: /Users/majanyberg/Library/Caches/zephyr
+-- Zephyr version: 3.7.0 (/Users/majanyberg/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: rpi_pico, qualifiers: rp2040
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.16.6 (/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6)
+-- Found toolchain: zephyr 0.16.6 (/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6)
+-- Found Dtc: /opt/homebrew/bin/dtc (found suitable version "1.7.2", minimum required is "1.4.6")
+-- Found BOARD.dts: /Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico/rpi_pico.dts
+-- Found devicetree overlay: ./app.overlay
+-- Generated zephyr.dts: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/zephyr.dts
+-- Generated devicetree_generated.h: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/devicetree_generated.h
+-- Including generated dts.cmake file: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/dts.cmake
+Parsing /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/Kconfig
+Loaded configuration '/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico/rpi_pico_defconfig'
+Merged configuration '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/prj.conf'
+Configuration saved to '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/.config'
+Kconfig header saved to '/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.38")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Using ccache: /opt/homebrew/bin/ccache
+-- Configuring done (8.6s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build
+-- west build: building application
+[1/143] Preparing syscall dependency handling
+
+[2/143] Creating directories for 'second_stage_bootloader'
+[3/143] No download step for 'second_stage_bootloader'
+[4/143] Generating include/generated/zephyr/version.h
+-- Zephyr version: 3.7.0 (/Users/majanyberg/zephyrproject/zephyr), build: v3.7.0
+[5/143] No update step for 'second_stage_bootloader'
+[6/143] No patch step for 'second_stage_bootloader'
+[7/143] Generating misc/generated/syscalls_subdirs.trigger
+[8/143] Performing configure step for 'second_stage_bootloader'
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader
+[9/143] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[10/143] Performing build step for 'second_stage_bootloader'
+[1/2] Building ASM object CMakeFiles/boot_stage2.dir/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/boot_stage2/boot2_w25q080.S.obj
+[2/2] Linking ASM executable boot_stage2
+[11/143] No install step for 'second_stage_bootloader'
+[12/143] Completed 'second_stage_bootloader'
+[13/143] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_list.h
+[14/143] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[15/143] Generating include/generated/zephyr/driver-validation.h
+[16/143] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[17/143] Generating include/generated/zephyr/offsets.h
+[18/143] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[19/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[20/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+[21/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[23/143] Building C object drivers/sensor_node/CMakeFiles/sensor_node_lib.dir/sensor_node.c.obj
+FAILED: [code=1] drivers/sensor_node/CMakeFiles/sensor_node_lib.dir/sensor_node.c.obj 
+ccache /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/. -I/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr -I/Users/majanyberg/zephyrproject/zephyr/include -I/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated -I/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi -I/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rp2xxx/. -I/Users/majanyberg/zephyrproject/modules/hal/cmsis/CMSIS/Core/Include -I/Users/majanyberg/zephyrproject/zephyr/modules/cmsis/. -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_base/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_clocks/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_watchdog/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_xosc/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_pll/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_irq/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_sync/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_timer/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_resets/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/pico_bootrom/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2040/hardware_regs/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2040/hardware_structs/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/common/pico_base/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/pico_platform/include -I/Users/majanyberg/zephyrproject/zephyr/modules/hal_rpi_pico -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_gpio/include -isystem /Users/majanyberg/zephyrproject/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m0plus -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi -imacros /Users/majanyberg/zephyrproject/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node=CMAKE_SOURCE_DIR -fmacro-prefix-map=/Users/majanyberg/zephyrproject/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/Users/majanyberg/zephyrproject=WEST_TOPDIR -ffunction-sections -fdata-sections --specs=picolibc.specs -std=c99 -MD -MT drivers/sensor_node/CMakeFiles/sensor_node_lib.dir/sensor_node.c.obj -MF drivers/sensor_node/CMakeFiles/sensor_node_lib.dir/sensor_node.c.obj.d -o drivers/sensor_node/CMakeFiles/sensor_node_lib.dir/sensor_node.c.obj -c /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c
+In file included from /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c:27:
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.h:21:5: error: redeclaration of enumerator 'SENSOR_CHAN_HUMIDITY'
+   21 |     SENSOR_CHAN_HUMIDITY = SENSOR_CHAN_PRIV_START,
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c:22:
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/drivers/sensor.h:98:9: note: previous definition of 'SENSOR_CHAN_HUMIDITY' with type 'enum sensor_channel'
+   98 |         SENSOR_CHAN_HUMIDITY,
+      |         ^~~~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.h:27:5: error: redeclaration of enumerator 'SENSOR_CHAN_DISTANCE'
+   27 |     SENSOR_CHAN_DISTANCE,
+      |     ^~~~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/drivers/sensor.h:119:9: note: previous definition of 'SENSOR_CHAN_DISTANCE' with type 'enum sensor_channel'
+  119 |         SENSOR_CHAN_DISTANCE,
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_macro.h:34,
+                 from /Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util.h:17,
+                 from /Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/atomic.h:18,
+                 from /Users/majanyberg/zephyrproject/zephyr/include/zephyr/kernel_includes.h:25,
+                 from /Users/majanyberg/zephyrproject/zephyr/include/zephyr/kernel.h:17,
+                 from /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c:20:
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/device.h:92:41: error: '__device_dts_ord_DT_N_S_sensor_node_P_uart_dev_IDX_0_PH_ORD' undeclared here (not in a function)
+   92 | #define DEVICE_NAME_GET(dev_id) _CONCAT(__device_, dev_id)
+      |                                         ^~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+   72 | #define __DEBRACKET(...) __VA_ARGS__
+      |                          ^~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+   59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_macro.h:180:9: note: in expansion of macro 'Z_COND_CODE_1'
+  180 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree.h:4528:9: note: in expansion of macro 'COND_CODE_1'
+ 4528 |         COND_CODE_1(DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT),   \
+      |         ^~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/toolchain/common.h:138:23: note: in expansion of macro '_DO_CONCAT'
+  138 | #define _CONCAT(x, y) _DO_CONCAT(x, y)
+      |                       ^~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/device.h:92:33: note: in expansion of macro '_CONCAT'
+   92 | #define DEVICE_NAME_GET(dev_id) _CONCAT(__device_, dev_id)
+      |                                 ^~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/device.h:229:37: note: in expansion of macro 'DEVICE_NAME_GET'
+  229 | #define DEVICE_DT_NAME_GET(node_id) DEVICE_NAME_GET(Z_DEVICE_DT_DEV_ID(node_id))
+      |                                     ^~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/device.h:246:34: note: in expansion of macro 'DEVICE_DT_NAME_GET'
+  246 | #define DEVICE_DT_GET(node_id) (&DEVICE_DT_NAME_GET(node_id))
+      |                                  ^~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c:243:21: note: in expansion of macro 'DEVICE_DT_GET'
+  243 |         .uart_dev = DEVICE_DT_GET(DT_INST_PHANDLE(inst, uart_dev)),    \
+      |                     ^~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/devicetree_generated.h:9530:53: note: in expansion of macro 'SENSOR_NODE_INST'
+ 9530 | #define DT_FOREACH_OKAY_INST_custom_sensor_node(fn) fn(0)
+      |                                                     ^~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:105:36: note: in expansion of macro 'DT_FOREACH_OKAY_INST_custom_sensor_node'
+  105 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/drivers/sensor_node/sensor_node.c:256:1: note: in expansion of macro 'DT_INST_FOREACH_STATUS_OKAY'
+  256 | DT_INST_FOREACH_STATUS_OKAY(SENSOR_NODE_INST)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[24/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[25/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[26/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[27/143] Building C object CMakeFiles/app.dir/src/main.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/main.c.obj 
+ccache /Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr -I/Users/majanyberg/zephyrproject/zephyr/include -I/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated -I/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi -I/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rp2xxx/. -I/Users/majanyberg/zephyrproject/modules/hal/cmsis/CMSIS/Core/Include -I/Users/majanyberg/zephyrproject/zephyr/modules/cmsis/. -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_base/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_clocks/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_watchdog/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_xosc/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_pll/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_irq/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_sync/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_timer/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_resets/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/pico_bootrom/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2040/hardware_regs/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2040/hardware_structs/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/common/pico_base/include -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/pico_platform/include -I/Users/majanyberg/zephyrproject/zephyr/modules/hal_rpi_pico -I/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/hardware_gpio/include -isystem /Users/majanyberg/zephyrproject/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m0plus -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi -imacros /Users/majanyberg/zephyrproject/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node=CMAKE_SOURCE_DIR -fmacro-prefix-map=/Users/majanyberg/zephyrproject/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/Users/majanyberg/zephyrproject=WEST_TOPDIR -ffunction-sections -fdata-sections --specs=picolibc.specs -std=c99 -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles/app.dir/src/main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/src/main.c
+In file included from /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/src/main.c:27:
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/src/../drivers/sensor_node/sensor_node.h:21:5: error: redeclaration of enumerator 'SENSOR_CHAN_HUMIDITY'
+   21 |     SENSOR_CHAN_HUMIDITY = SENSOR_CHAN_PRIV_START,
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/src/main.c:23:
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/drivers/sensor.h:98:9: note: previous definition of 'SENSOR_CHAN_HUMIDITY' with type 'enum sensor_channel'
+   98 |         SENSOR_CHAN_HUMIDITY,
+      |         ^~~~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/src/../drivers/sensor_node/sensor_node.h:27:5: error: redeclaration of enumerator 'SENSOR_CHAN_DISTANCE'
+   27 |     SENSOR_CHAN_DISTANCE,
+      |     ^~~~~~~~~~~~~~~~~~~~
+/Users/majanyberg/zephyrproject/zephyr/include/zephyr/drivers/sensor.h:119:9: note: previous definition of 'SENSOR_CHAN_DISTANCE' with type 'enum sensor_channel'
+  119 |         SENSOR_CHAN_DISTANCE,
+      |         ^~~~~~~~~~~~~~~~~~~~
+[28/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[29/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[30/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[31/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/mpsc_pbuf.c.obj
+[32/143] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /opt/homebrew/bin/cmake --build /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build

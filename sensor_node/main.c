@@ -6,10 +6,10 @@
 #include "hardware/uart.h"
 
 // UART
-// #define UART_ID uart0
-// #define BAUD_RATE 115200
-// #define UART_TX_PIN 0
-// #define UART_RX_PIN 1
+#define UART_ID uart0
+#define BAUD_RATE 115200
+#define UART_TX_PIN 0
+#define UART_RX_PIN 1
 
 // Distance sensor
 #define TRIG_PIN 3
@@ -41,10 +41,10 @@
 #define SOUND_INTERVAL 200
 
 // alarm thresholds
-#define TEMP_MAX 35.0f           // degrees Celsius
-#define TEMP_MIN 5.0f            // degrees Celsius
-#define HUMIDITY_MAX 80.0f       // %
-#define HUMIDITY_MIN 20.0f       // %
+#define TEMP_MAX 35.0f     // degrees Celsius
+#define TEMP_MIN 5.0f      // degrees Celsius
+#define HUMIDITY_MAX 80.0f // %
+#define HUMIDITY_MIN 20.0f // %
 // TODO: Add a lower limit to mimic wispering
 #define SOUND_ALARM_THRESHOLD 45 // sound_i = raw ADC >> 4, range 0..63
 
@@ -227,7 +227,7 @@ bme680_data_t read_bme680(bme_calib *cal)
     return data;
 }
 // UART
-/*
+
 void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist)
 {
 
@@ -260,12 +260,15 @@ void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist)
 
     uart_write_blocking(UART_ID, frame, 10);
 }
-*/
 
 int main()
 {
     stdio_init_all();
     sleep_ms(2000);
+
+    uart_init(UART_ID, BAUD_RATE);
+    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
 
     // Ultrasonic
     gpio_init(TRIG_PIN);
@@ -354,6 +357,9 @@ int main()
         if (hum > HUMIDITY_MAX || hum < HUMIDITY_MIN)
             alarm |= (1 << 4);
 
+        // Send UART frame
+        send_uart_frame(temp, hum, sound, dist_i);
+
         // Display alarm status
         printf("\nALARM: %s\n", alarm ? "ON" : "OFF");
         if (alarm)
@@ -369,8 +375,8 @@ int main()
                 printf(" Humidity(%.1f%%)", hum);
             printf("\n");
         }
-
-        printf("\n=== UART Frame Data ===\n");
+        // DEBUG
+        printf("\nUART Frame Data\n");
         printf("Raw Values - Temp: %d, Humidity: %d\n", temp_i, hum_i);
         printf("Sound: %u (raw %u), Distance: %u cm\n", sound_i, sound, dist_i);
         printf("Alarm Flags: 0x%02X\n", alarm);

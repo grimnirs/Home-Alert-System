@@ -1,0 +1,14 @@
+# Copyright (c) 2026 Home Alert System
+# SPDX-License-Identifier: Apache-2.0
+
+description: "Zephyr sensor node device"
+
+compatible: "zephyr,sensor-node"
+
+include: base.yaml
+
+properties:
+  uart-dev:
+    type: phandle
+    required: true
+    description: "UART device used by the sensor node driver"

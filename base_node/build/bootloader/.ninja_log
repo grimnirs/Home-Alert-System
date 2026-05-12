@@ -1,0 +1,7 @@
+# ninja log v7
+2	171	1778596804036616233	CMakeFiles/boot_stage2.dir/Users/majanyberg/zephyrproject/modules/hal/rpi_pico/src/rp2_common/boot_stage2/boot2_w25q080.S.obj	3b4bd176ca47c9a2
+172	388	1778596804411533348	boot_stage2	971e61f3e2110131
+172	388	1778596804411533348	boot_stage2.bin	971e61f3e2110131
+172	388	1778596804411533348	boot_stage2.S	971e61f3e2110131
+172	388	1778596804411533348	/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/boot_stage2.bin	971e61f3e2110131
+172	388	1778596804411533348	/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/bootloader/boot_stage2.S	971e61f3e2110131
