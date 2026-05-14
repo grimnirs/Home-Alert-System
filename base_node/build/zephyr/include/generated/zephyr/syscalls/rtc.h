@@ -169,57 +169,6 @@ static inline int rtc_alarm_is_pending(const struct device * dev, uint16_t id)
 #endif
 
 
-extern int z_impl_rtc_alarm_set_callback(const struct device * dev, uint16_t id, rtc_alarm_callback callback, void * user_data);
-
-__pinned_func
-static inline int rtc_alarm_set_callback(const struct device * dev, uint16_t id, rtc_alarm_callback callback, void * user_data)
-{
-#ifdef CONFIG_USERSPACE
-	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
-		union { uintptr_t x; uint16_t val; } parm1 = { .val = id };
-		union { uintptr_t x; rtc_alarm_callback val; } parm2 = { .val = callback };
-		union { uintptr_t x; void * val; } parm3 = { .val = user_data };
-		return (int) arch_syscall_invoke4(parm0.x, parm1.x, parm2.x, parm3.x, K_SYSCALL_RTC_ALARM_SET_CALLBACK);
-	}
-#endif
-	compiler_barrier();
-	return z_impl_rtc_alarm_set_callback(dev, id, callback, user_data);
-}
-
-#if defined(CONFIG_TRACING_SYSCALL)
-#ifndef DISABLE_SYSCALL_TRACING
-
-#define rtc_alarm_set_callback(dev, id, callback, user_data) ({ 	int syscall__retval; 	sys_port_trace_syscall_enter(K_SYSCALL_RTC_ALARM_SET_CALLBACK, rtc_alarm_set_callback, dev, id, callback, user_data); 	syscall__retval = rtc_alarm_set_callback(dev, id, callback, user_data); 	sys_port_trace_syscall_exit(K_SYSCALL_RTC_ALARM_SET_CALLBACK, rtc_alarm_set_callback, dev, id, callback, user_data, syscall__retval); 	syscall__retval; })
-#endif
-#endif
-
-
-extern int z_impl_rtc_update_set_callback(const struct device * dev, rtc_update_callback callback, void * user_data);
-
-__pinned_func
-static inline int rtc_update_set_callback(const struct device * dev, rtc_update_callback callback, void * user_data)
-{
-#ifdef CONFIG_USERSPACE
-	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
-		union { uintptr_t x; rtc_update_callback val; } parm1 = { .val = callback };
-		union { uintptr_t x; void * val; } parm2 = { .val = user_data };
-		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_RTC_UPDATE_SET_CALLBACK);
-	}
-#endif
-	compiler_barrier();
-	return z_impl_rtc_update_set_callback(dev, callback, user_data);
-}
-
-#if defined(CONFIG_TRACING_SYSCALL)
-#ifndef DISABLE_SYSCALL_TRACING
-
-#define rtc_update_set_callback(dev, callback, user_data) ({ 	int syscall__retval; 	sys_port_trace_syscall_enter(K_SYSCALL_RTC_UPDATE_SET_CALLBACK, rtc_update_set_callback, dev, callback, user_data); 	syscall__retval = rtc_update_set_callback(dev, callback, user_data); 	sys_port_trace_syscall_exit(K_SYSCALL_RTC_UPDATE_SET_CALLBACK, rtc_update_set_callback, dev, callback, user_data, syscall__retval); 	syscall__retval; })
-#endif
-#endif
-
-
 extern int z_impl_rtc_set_calibration(const struct device * dev, int32_t calibration);
 
 __pinned_func

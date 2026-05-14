@@ -24,10 +24,10 @@ APPLICATION_CONFIG_DIR:PATH=/Users/majanyberg/zephyrproject/Home-Alert-System/ba
 APPLICATION_SOURCE_DIR:PATH=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node
 
 //Selected board
-BOARD:STRING=rpi_pico
+BOARD:STRING=rpi_pico2/rp2350a/m33
 
-//Board directory for board (rpi_pico)
-BOARD_DIR:PATH=/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico
+//Main board directory for board (rpi_pico2)
+BOARD_DIR:PATH=/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2
 
 //Support board extensions
 BOARD_EXTENSIONS:BOOL=ON
@@ -48,7 +48,7 @@ BYPRODUCT_KERNEL_HEX_NAME:FILEPATH=/Users/majanyberg/zephyrproject/Home-Alert-Sy
 BYPRODUCT_KERNEL_UF2_NAME:FILEPATH=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/zephyr.uf2
 
 //Selected board
-CACHED_BOARD:STRING=rpi_pico
+CACHED_BOARD:STRING=rpi_pico2/rp2350a/m33
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -127,8 +127,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+//Path to a program.
+CMAKE_C_COMPILER:FILEPATH=/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -241,16 +241,16 @@ CMAKE_PROJECT_NAME:STATIC=base_node
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=3.7.0
+CMAKE_PROJECT_VERSION:STATIC=4.2.1
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=4
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=7
+CMAKE_PROJECT_VERSION_MINOR:STATIC=2
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -339,6 +339,9 @@ DTC:FILEPATH=/opt/homebrew/bin/dtc
 // dts2.overlay"
 DTC_OVERLAY_FILE:STRING=app.overlay
 
+//Path to a program.
+GEN_KOBJECT_LIST:FILEPATH=/Users/majanyberg/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+
 //Linker BFD compatibility (compiler reported)
 GNULD_LINKER_IS_BFD:BOOL=ON
 
@@ -349,13 +352,16 @@ GNULD_VERSION_STRING:STRING=2.38
 GPERF:FILEPATH=/opt/homebrew/bin/gperf
 
 //Path to a program.
-IMGTOOL:FILEPATH=/Users/majanyberg/zephyrproject/.venv/bin/imgtool
+IMGTOOL:FILEPATH=/Users/majanyberg/zephyrproject/bootloader/mcuboot/scripts/imgtool.py
 
 //Path to a program.
 OPENOCD:FILEPATH=/opt/homebrew/bin/openocd
 
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND
+
+//Path to a program.
+PTY_INTERFACE:FILEPATH=PTY_INTERFACE-NOTFOUND
 
 //Path to a program.
 PUNCOVER:FILEPATH=PUNCOVER-NOTFOUND
@@ -370,7 +376,7 @@ Picolibc_IS_TOP_LEVEL:STATIC=OFF
 Picolibc_SOURCE_DIR:STATIC=/Users/majanyberg/zephyrproject/modules/lib/picolibc
 
 //Path to the SoC directory.
-SOC_FULL_DIR:PATH=/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi
+SOC_FULL_DIR:PATH=/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rpi_pico
 
 //True if toolchain supports newlib
 TOOLCHAIN_HAS_NEWLIB:BOOL=ON
@@ -431,6 +437,8 @@ base_node_SOURCE_DIR:STATIC=/Users/majanyberg/zephyrproject/Home-Alert-System/ba
 # INTERNAL cache entries
 ########################
 
+//List of board directories for board (rpi_pico2)
+BOARD_DIRECTORIES:INTERNAL=/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/dts/bindings;/Users/majanyberg/zephyrproject/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -484,8 +492,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
@@ -548,7 +554,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=155
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=187
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -598,13 +604,15 @@ FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/opt/homebrew/bin/dtc][v1.7.2(1.4.6)]
 //Details about finding GnuLd
 FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd][v2.38()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/majanyberg/zephyrproject/.venv/bin/python3.14][found components: Interpreter ][v3.14.3(3.8)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/majanyberg/zephyrproject/.venv/bin/python3.14][found components: Interpreter ][v3.14.3(3.10)]
 //Zephyr hardware model version
 HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
 KERNEL_META_PATH:INTERNAL=/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/zephyr.meta
-SOC_LINKER_SCRIPT:INTERNAL=/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rp2xxx/linker.ld
+//List of SoC directories for SoC (rp2350a)
+SOC_DIRECTORIES:INTERNAL=/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rpi_pico
+SOC_LINKER_SCRIPT:INTERNAL=/Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rpi_pico/rp2350/linker.ld
 //West
 WEST:INTERNAL=/Users/majanyberg/zephyrproject/.venv/bin/python3.14;-m;west
 //Compiler reason failure
@@ -615,6 +623,8 @@ _Python3_EXECUTABLE:INTERNAL=/Users/majanyberg/zephyrproject/.venv/bin/python3.1
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;3;64;<none>;cpython-314-darwin.so;abi3;/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/python3.14;/Users/majanyberg/zephyrproject/.venv/lib/python3.14;/Users/majanyberg/zephyrproject/.venv/lib/python3.14/site-packages;/Users/majanyberg/zephyrproject/.venv/lib/python3.14/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=1072af1c0fd3871a4d298b1e0b5b46a8
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

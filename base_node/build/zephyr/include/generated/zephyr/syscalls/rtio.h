@@ -95,6 +95,30 @@ static inline int rtio_sqe_cancel(struct rtio_sqe * sqe)
 #endif
 
 
+extern void z_impl_rtio_sqe_signal(struct rtio_sqe * sqe);
+
+__pinned_func
+static inline void rtio_sqe_signal(struct rtio_sqe * sqe)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; struct rtio_sqe * val; } parm0 = { .val = sqe };
+		(void) arch_syscall_invoke1(parm0.x, K_SYSCALL_RTIO_SQE_SIGNAL);
+		return;
+	}
+#endif
+	compiler_barrier();
+	z_impl_rtio_sqe_signal(sqe);
+}
+
+#if defined(CONFIG_TRACING_SYSCALL)
+#ifndef DISABLE_SYSCALL_TRACING
+
+#define rtio_sqe_signal(sqe) do { 	sys_port_trace_syscall_enter(K_SYSCALL_RTIO_SQE_SIGNAL, rtio_sqe_signal, sqe); 	rtio_sqe_signal(sqe); 	sys_port_trace_syscall_exit(K_SYSCALL_RTIO_SQE_SIGNAL, rtio_sqe_signal, sqe); } while(false)
+#endif
+#endif
+
+
 extern int z_impl_rtio_sqe_copy_in_get_handles(struct rtio * r, const struct rtio_sqe * sqes, struct rtio_sqe ** handle, size_t sqe_count);
 
 __pinned_func

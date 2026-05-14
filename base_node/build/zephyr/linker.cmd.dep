@@ -1,5 +1,5 @@
 linker.cmd: \
- /Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rp2xxx/linker.ld \
+ /Users/majanyberg/zephyrproject/zephyr/soc/raspberrypi/rpi_pico/rp2350/linker.ld \
  /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/zephyr/autoconf.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/sections.h \
@@ -31,6 +31,8 @@ linker.cmd: \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree/can.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree/reset.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree/mbox.h \
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree/port-endpoint.h \
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/devicetree/display.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/devicetree_regions.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/linker-defs.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/toolchain/common.h \
@@ -53,6 +55,7 @@ linker.cmd: \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-rom/common-rom-kernel-devices.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/iterable_sections.h \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/device-deps.ld \
+ /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/device-api-sections.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-rom/common-rom-ztest.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-rom/common-rom-init.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-rom/common-rom-net.ld \
@@ -71,13 +74,14 @@ linker.cmd: \
  /Users/majanyberg/zephyrproject/zephyr/include/../arch/common/ramfunc.ld \
  /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-ramfunc-section.ld \
  /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-rwdata.ld \
- /Users/majanyberg/zephyrproject/zephyr/include/../modules/hal_rpi_pico/timecritical.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-ram.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/kobject-data.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/cplusplus-ram.ld \
  /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-data-sections.ld \
- /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-noinit.ld \
  /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-sections.ld \
  /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/intlist.ld \
- /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/ram-end.ld \
- /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/debug-sections.ld
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/debug-sections.ld \
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/common-noinit.ld \
+ /Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/include/generated/snippets-noinit.ld \
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/kobject-priv-stacks.ld \
+ /Users/majanyberg/zephyrproject/zephyr/include/zephyr/linker/ram-end.ld

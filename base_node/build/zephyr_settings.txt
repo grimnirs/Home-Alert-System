@@ -7,10 +7,13 @@
 #
 # See the Modules guide for more information.
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/adi"
+"DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/ambiq"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/atmel"
+"DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/bouffalolab"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/espressif"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/gigadevice"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/microchip"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/nuvoton"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/nxp"
 "DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/stm32"
+"DTS_ROOT":"/Users/majanyberg/zephyrproject/modules/hal/ti"

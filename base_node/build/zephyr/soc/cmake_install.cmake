@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/soc/soc/rp2040/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/soc/soc/rp2350a/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

@@ -64,7 +64,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/broadcom/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/espressif/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/everlight/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -84,12 +94,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/jedec/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/liteon/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/maxim/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/meas/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/melexis/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/memsic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -110,6 +140,26 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/nxp/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/pixart/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/pni/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/realtek/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/renesas/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -135,6 +185,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/st/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/zephyr/drivers/sensor/tdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

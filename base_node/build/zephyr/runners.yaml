@@ -3,8 +3,6 @@ runners:
 - openocd
 - jlink
 - uf2
-- blackmagicprobe
-- pyocd
 
 # Default flash runner if --runner is not given.
 flash-runner: openocd
@@ -14,7 +12,7 @@ debug-runner: openocd
 
 # Common runner configuration values.
 config:
-  board_dir: /Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico
+  board_dir: /Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2
   # Build outputs:
   elf_file: zephyr.elf
   hex_file: zephyr.hex
@@ -36,19 +34,11 @@ args:
     - --cmd-pre-init
     - source [find interface/cmsis-dap.cfg]
     - --cmd-pre-init
-    - transport select swd
+    - source [find target/rp2350.cfg]
     - --cmd-pre-init
-    - source [find target/rp2040.cfg]
-    - --cmd-pre-init
-    - set_adapter_speed_if_not_set 2000
+    - set_adapter_speed_if_not_set 5000
   jlink:
     - --dt-flash=y
-    - --device=RP2040_M0_0
+    - --device=RP2350_M33_0
   uf2:
-    - --board-id=RPI-RP2
-  blackmagicprobe:
-    []
-
-  pyocd:
-    - --dt-flash=y
-    - --target=rp2040
+    - --board-id=RP2350

@@ -13,7 +13,6 @@
  *   2 blinks = environmental anomaly
  *   3 blinks = abnormal sound
  */
-#include <zephyr/usb/usb_device.h>
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
@@ -67,34 +66,50 @@ int main(void)
     /* -------------------------------------------------------------- */
     /* Get sensor-node device                                         */
     /* -------------------------------------------------------------- */
-    /* Enable USB serial */
-    if (usb_enable(NULL) != 0)
-    {
-        return -EIO;
-    }
-
-    /* Wait for USB enumeration */
     k_sleep(K_SECONDS(2));
     
+    printk("\n");
+    printk("========================================\n");
+    printk(" Initializing Base Node...\n");
+    printk("========================================\n\n");
+
+    /* Get sensor-node driver device */
+    printk("[INIT] Getting sensor-node device...\n");
     const struct device *sensor_dev = DEVICE_DT_GET(SENSOR_NODE);
+
+    if (!sensor_dev)
+    {
+        printk("[ERROR] Sensor node device handle is NULL!\n");
+        return -ENODEV;
+    }
 
     if (!device_is_ready(sensor_dev))
     {
-        printk("ERROR: Sensor node device not ready!\n");
+        printk("[ERROR] Sensor node device not ready!\n");
+        printk("[ERROR] Device: %s, ready: %d\n",
+               sensor_dev->name, device_is_ready(sensor_dev));
         return -ENODEV;
     }
+
+    printk("[INIT] Sensor node device ready: %s\n", sensor_dev->name);
 
     /* -------------------------------------------------------------- */
     /* Configure alert LED                                            */
     /* -------------------------------------------------------------- */
-
+    printk("[INIT] Configuring alert LED...\n");
     if (!gpio_is_ready_dt(&alert_led))
     {
-        printk("ERROR: Alert LED GPIO not ready!\n");
+        printk("[ERROR] Alert LED GPIO not ready!\n");
         return -ENODEV;
     }
 
-    gpio_pin_configure_dt(&alert_led, GPIO_OUTPUT_INACTIVE);
+    if (gpio_pin_configure_dt(&alert_led, GPIO_OUTPUT_INACTIVE) < 0)
+    {
+        printk("[ERROR] Failed to configure alert LED pin\n");
+        return -EIO;
+    }
+
+    printk("[INIT] Alert LED configured on pin %d\n", alert_led.pin);
 
     printk("\n");
     printk("========================================\n");
@@ -177,8 +192,9 @@ int main(void)
             {
                 printk("\n");
                 printk("========================================\n");
-                printk(" SECURITY ALARM TRIGGERED\n");
+                printk(" *** ALARM TRIGGERED ***\n");
                 printk("========================================\n");
+                printk("ALARM\n");
 
                 /* Motion alarm */
                 if (alarm_flags & ALARM_MOTION_BIT)

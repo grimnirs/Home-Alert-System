@@ -134,7 +134,7 @@ static int sensor_node_sample_fetch(const struct device *dev,
     ret = k_sem_take(&data->frame_sem, K_SECONDS(2));
     if (ret < 0)
     {
-        LOG_WRN("No frame received within timeout");
+        LOG_DBG("[sensor_node] No frame received within timeout");
         return -EAGAIN;
     }
 
@@ -147,7 +147,7 @@ static int sensor_node_sample_fetch(const struct device *dev,
     data->distance = (uint16_t)((f[6] << 8) | f[7]);
     data->alarm_status = f[8];
 
-    LOG_DBG("Parsed: temp=%d humidity=%u sound=%u dist=%u alarm=0x%02x",
+    LOG_DBG("[sensor_node] Parsed: temp=%d humidity=%u sound=%u dist=%u alarm=0x%02x",
             data->temperature, data->humidity, data->sound,
             data->distance, data->alarm_status);
 
@@ -216,16 +216,28 @@ static int sensor_node_init(const struct device *dev)
     struct sensor_node_data *data = dev->data;
     const struct sensor_node_config *cfg = dev->config;
 
+    LOG_INF("[sensor_node] Initializing...");
+
     data->uart_dev = cfg->uart_dev;
     data->rx_idx = 0;
+
+    if (!data->uart_dev)
+    {
+        LOG_ERR("[sensor_node] UART device pointer is NULL!");
+        return -ENODEV;
+    }
+
+    LOG_INF("[sensor_node] UART device obtained: %s", data->uart_dev->name);
 
     k_sem_init(&data->frame_sem, 0, 1);
 
     if (!device_is_ready(data->uart_dev))
     {
-        LOG_ERR("UART device not ready");
+        LOG_ERR("[sensor_node] UART device not ready: %s", data->uart_dev->name);
         return -ENODEV;
     }
+
+    LOG_INF("[sensor_node] UART device ready");
 
     /* Configure UART interrupt-driven reception */
     uart_irq_callback_user_data_set(data->uart_dev,
@@ -233,7 +245,8 @@ static int sensor_node_init(const struct device *dev)
                                     (void *)dev);
     uart_irq_rx_enable(data->uart_dev);
 
-    LOG_INF("Sensor node driver initialised (UART: %s)",
+    LOG_INF("[sensor_node] UART ISR configured and RX enabled");
+    LOG_INF("[sensor_node] Driver initialised (UART: %s)",
             data->uart_dev->name);
 
     return 0;

@@ -10,8 +10,6 @@
 
 #define K_SYSCALL_DRIVER_SENSOR(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, sensor, SENSOR)
 
-#define K_SYSCALL_DRIVER_UART(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, uart, UART)
-
 #define K_SYSCALL_DRIVER_SHARED_IRQ(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, shared_irq, SHARED_IRQ)
 
 #define K_SYSCALL_DRIVER_CRYPTO(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, crypto, CRYPTO)
@@ -31,6 +29,8 @@
 #define K_SYSCALL_DRIVER_CHARGER(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, charger, CHARGER)
 
 #define K_SYSCALL_DRIVER_CLOCK_CONTROL(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, clock_control, CLOCK_CONTROL)
+
+#define K_SYSCALL_DRIVER_COMPARATOR(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, comparator, COMPARATOR)
 
 #define K_SYSCALL_DRIVER_COREDUMP(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, coredump, COREDUMP)
 
@@ -68,6 +68,8 @@
 
 #define K_SYSCALL_DRIVER_GNSS(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, gnss, GNSS)
 
+#define K_SYSCALL_DRIVER_HAPTICS(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, haptics, HAPTICS)
+
 #define K_SYSCALL_DRIVER_HWSPINLOCK(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, hwspinlock, HWSPINLOCK)
 
 #define K_SYSCALL_DRIVER_I2C(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, i2c, I2C)
@@ -79,8 +81,6 @@
 #define K_SYSCALL_DRIVER_I3C(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, i3c, I3C)
 
 #define K_SYSCALL_DRIVER_IPM(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, ipm, IPM)
-
-#define K_SYSCALL_DRIVER_KSCAN(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, kscan, KSCAN)
 
 #define K_SYSCALL_DRIVER_LED(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, led, LED)
 
@@ -120,11 +120,15 @@
 
 #define K_SYSCALL_DRIVER_SPI(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, spi, SPI)
 
+#define K_SYSCALL_DRIVER_STEPPER(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, stepper, STEPPER)
+
 #define K_SYSCALL_DRIVER_SYSCON(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, syscon, SYSCON)
 
 #define K_SYSCALL_DRIVER_TEE(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, tee, TEE)
 
 #define K_SYSCALL_DRIVER_VIDEO(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, video, VIDEO)
+
+#define K_SYSCALL_DRIVER_VIRTIO(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, virtio, VIRTIO)
 
 #define K_SYSCALL_DRIVER_W1(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, w1, W1)
 
@@ -132,11 +136,15 @@
 
 #define K_SYSCALL_DRIVER_CAN_TRANSCEIVER(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, can_transceiver, CAN_TRANSCEIVER)
 
+#define K_SYSCALL_DRIVER_NRF_CLOCK_CONTROL(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, nrf_clock_control, NRF_CLOCK_CONTROL)
+
 #define K_SYSCALL_DRIVER_I3C_TARGET(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, i3c_target, I3C_TARGET)
 
 #define K_SYSCALL_DRIVER_ITS(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, its, ITS)
 
 #define K_SYSCALL_DRIVER_VTD(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, vtd, VTD)
+
+#define K_SYSCALL_DRIVER_RENESAS_ELC(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, renesas_elc, RENESAS_ELC)
 
 #define K_SYSCALL_DRIVER_TGPIO(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, tgpio, TGPIO)
 
@@ -144,7 +152,13 @@
 
 #define K_SYSCALL_DRIVER_PCIE_EP(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, pcie_ep, PCIE_EP)
 
+#define K_SYSCALL_DRIVER_PSI5(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, psi5, PSI5)
+
+#define K_SYSCALL_DRIVER_SENT(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, sent, SENT)
+
 #define K_SYSCALL_DRIVER_SVC(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, svc, SVC)
+
+#define K_SYSCALL_DRIVER_UART(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, uart, UART)
 
 #define K_SYSCALL_DRIVER_BC12_EMUL(ptr, op) K_SYSCALL_DRIVER_GEN(ptr, op, bc12_emul, BC12_EMUL)
 

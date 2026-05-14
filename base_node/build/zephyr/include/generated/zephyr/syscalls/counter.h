@@ -256,6 +256,29 @@ static inline int counter_get_value_64(const struct device * dev, uint64_t * tic
 #endif
 
 
+extern int z_impl_counter_reset(const struct device * dev);
+
+__pinned_func
+static inline int counter_reset(const struct device * dev)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
+		return (int) arch_syscall_invoke1(parm0.x, K_SYSCALL_COUNTER_RESET);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_counter_reset(dev);
+}
+
+#if defined(CONFIG_TRACING_SYSCALL)
+#ifndef DISABLE_SYSCALL_TRACING
+
+#define counter_reset(dev) ({ 	int syscall__retval; 	sys_port_trace_syscall_enter(K_SYSCALL_COUNTER_RESET, counter_reset, dev); 	syscall__retval = counter_reset(dev); 	sys_port_trace_syscall_exit(K_SYSCALL_COUNTER_RESET, counter_reset, dev, syscall__retval); 	syscall__retval; })
+#endif
+#endif
+
+
 extern int z_impl_counter_set_channel_alarm(const struct device * dev, uint8_t chan_id, const struct counter_alarm_cfg * alarm_cfg);
 
 __pinned_func

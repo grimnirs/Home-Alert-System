@@ -1,4 +1,4 @@
-# Install script for directory: /Users/majanyberg/zephyrproject/modules/hal/silabs
+# Install script for directory: /Users/majanyberg/zephyrproject/zephyr/modules/hal_silabs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

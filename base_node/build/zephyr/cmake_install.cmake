@@ -89,6 +89,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/cmsis_6/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/fatfs/cmake_install.cmake")
 endif()
 
@@ -99,7 +104,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/altera/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/hal_afbr/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -110,6 +115,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/atmel/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/hal_bouffalolab/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -189,7 +199,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/stm32/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/hal_stm32/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/hal_tdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -200,6 +215,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/ti/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/hal_wch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -219,12 +239,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/libmetal/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/liblc3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/liblc3/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/libmctp/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/libmetal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -259,7 +284,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/nrf_hw_models/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/nrf_wifi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -294,12 +319,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/trusted-firmware-m/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/trusted-firmware-a/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/trusted-firmware-a/cmake_install.cmake")
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/trusted-firmware-m/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -310,6 +335,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/zcbor/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/majanyberg/zephyrproject/Home-Alert-System/base_node/build/modules/nrf_hw_models/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
