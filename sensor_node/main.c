@@ -32,7 +32,6 @@
 #define REG_CTRL_HUM 0x72
 #define REG_CTRL_MEAS 0x74
 #define REG_DATA_START 0x1D
-
 #define SOFT_RESET_CMD 0xB6
 
 // timing
@@ -41,12 +40,11 @@
 #define SOUND_INTERVAL 200
 
 // alarm thresholds
-#define TEMP_MAX 35.0f     // degrees Celsius
-#define TEMP_MIN 5.0f      // degrees Celsius
+#define TEMP_MAX 40.0f     // degrees Celsius
 #define HUMIDITY_MAX 80.0f // %
 #define HUMIDITY_MIN 20.0f // %
 // TODO: Add a lower limit to mimic wispering
-#define SOUND_ALARM_THRESHOLD 45 // sound_i = raw ADC >> 4, range 0..63
+#define SOUND_ALARM_THRESHOLD 30 // sound_i = raw ADC >> 4, range 0..63
 
 // calib struct
 typedef struct
@@ -228,22 +226,13 @@ bme680_data_t read_bme680(bme_calib *cal)
 }
 // UART
 
-void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist)
+void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist, uint8_t alarm)
 {
 
     int16_t temp_i = (int16_t)(temp * 100);
     int16_t hum_i = (int16_t)(humidity * 100);
     uint8_t sound_i = sound >> 4;
-
-    uint8_t alarm = 0;
-    if (dist < 50)
-        alarm |= (1 << 0);
-    if (temp > TEMP_MAX || temp < TEMP_MIN)
-        alarm |= (1 << 1);
-    if (sound_i > 200)
-        alarm |= (1 << 2);
-    if (humidity > HUMIDITY_MAX || humidity < HUMIDITY_MIN)
-        alarm |= (1 << 4);
+    uint16_t dist_i = dist;
 
     uint8_t frame[10];
 
@@ -253,8 +242,8 @@ void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist)
     frame[3] = hum_i >> 8;
     frame[4] = hum_i;
     frame[5] = sound_i;
-    frame[6] = dist >> 8;
-    frame[7] = dist;
+    frame[6] = dist_i >> 8;
+    frame[7] = dist_i;
     frame[8] = alarm;
     frame[9] = 0x55;
 
@@ -312,24 +301,32 @@ int main()
     uint16_t sound = 0;
     float temp = 0;
     float hum = 0;
+    uint8_t sound_i = 0;
 
+    bool dist_ready = false;
+    bool sound_ready = false;
+    bool bme_ready = false;
     while (true)
     {
 
         if (absolute_time_diff_us(get_absolute_time(), t_ultra) <= 0)
         {
             dist = read_distance();
-            if (dist > 0)
-                printf("Distance: %.2f cm\n", dist);
-            else
-                printf("Distance: ERROR (timeout)\n");
+            dist_ready = (dist > 0);
+
+            printf("Distance: %.2f cm\n", dist);
+
             t_ultra = make_timeout_time_ms(DIST_INTERVAL);
         }
 
         if (absolute_time_diff_us(get_absolute_time(), t_sound) <= 0)
         {
             sound = read_sound();
-            printf("Sound: %u\n", sound);
+            sound_i = sound >> 4;
+            sound_ready = true;
+
+            printf("Sound: %u (scaled %u)\n", sound, sound_i);
+
             t_sound = make_timeout_time_ms(SOUND_INTERVAL);
         }
 
@@ -338,52 +335,32 @@ int main()
             bme680_data_t bme680 = read_bme680(&cal);
             temp = bme680.temperature;
             hum = bme680.humidity;
+            bme_ready = true;
             t_bme = make_timeout_time_ms(BME_INTERVAL);
         }
 
-        // UART data that would be sent:
-        int16_t temp_i = (int16_t)(temp * 100);
-        int16_t hum_i = (int16_t)(hum * 100);
-        uint8_t sound_i = sound >> 4;
-        uint16_t dist_i = (uint16_t)dist;
-
+        // alarm logic
         uint8_t alarm = 0;
-        if (dist < 50)
+        if (dist_ready && dist < 50.0f)
             alarm |= (1 << 0);
-        if (temp > TEMP_MAX || temp < TEMP_MIN)
+
+        if (bme_ready && (temp > TEMP_MAX))
             alarm |= (1 << 1);
-        if (sound_i > SOUND_ALARM_THRESHOLD)
+
+        if (sound_ready && sound_i > SOUND_ALARM_THRESHOLD)
             alarm |= (1 << 2);
-        if (hum > HUMIDITY_MAX || hum < HUMIDITY_MIN)
+
+        if (bme_ready && (hum > HUMIDITY_MAX || hum < HUMIDITY_MIN))
             alarm |= (1 << 4);
 
         // Send UART frame
-        send_uart_frame(temp, hum, sound, dist_i);
+        send_uart_frame(temp, hum, sound, (uint16_t)dist, alarm);
 
         // Display alarm status
-        printf("\nALARM: %s\n", alarm ? "ON" : "OFF");
-        if (alarm)
-        {
-            printf("  Triggered by:");
-            if (alarm & (1 << 0))
-                printf(" Distance<%dcm", 50);
-            if (alarm & (1 << 1))
-                printf(" Temp(%.1f°C)", temp);
-            if (alarm & (1 << 2))
-                printf(" Sound(%u)", sound_i);
-            if (alarm & (1 << 4))
-                printf(" Humidity(%.1f%%)", hum);
-            printf("\n");
-        }
-        // DEBUG
-        printf("\nUART Frame Data\n");
-        printf("Raw Values - Temp: %d, Humidity: %d\n", temp_i, hum_i);
-        printf("Sound: %u (raw %u), Distance: %u cm\n", sound_i, sound, dist_i);
-        printf("Alarm Flags: 0x%02X\n", alarm);
-        printf("Frame: 0xAA %02X %02X %02X %02X %02X %02X %02X 0x55\n",
-               temp_i >> 8, temp_i, hum_i >> 8, hum_i,
-               sound_i, dist_i >> 8, dist_i, alarm);
-        printf("======================\n\n");
+
+        printf("\nALARM: 0x%02X\n", alarm);
+        printf("Temp=%.2f Hum=%.2f Sound=%u Dist=%.2f\n",
+               temp, hum, sound_i, dist);
 
         sleep_ms(500);
     }

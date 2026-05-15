@@ -48,6 +48,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/zephyrproject/.venv/bin/uname"
       - "/Users/majanyberg/.rbenv/shims/uname"
@@ -99,6 +100,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -162,6 +164,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -225,6 +228,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -288,6 +292,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "find-v1"
@@ -351,6 +356,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
   -
     kind: "message-v1"
@@ -409,6 +415,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/zephyrproject/.venv/bin/gmake"
       - "/Users/majanyberg/.rbenv/shims/gmake"
@@ -438,6 +445,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/gmake"
       - "/Users/majanyberg/development/flutter/bin/gmake"
       - "/Users/majanyberg/.local/bin/gmake"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
       - "/Users/majanyberg/zephyrproject/.venv/bin/make"
       - "/Users/majanyberg/.rbenv/shims/make"
       - "/Users/majanyberg/.gem/ruby/3.2.0/bin/make"
@@ -488,6 +496,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -552,6 +561,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -646,6 +656,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -720,6 +731,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ar"
     search_context:
       ENV{PATH}:
@@ -757,6 +769,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -809,6 +822,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ranlib"
     search_context:
       ENV{PATH}:
@@ -846,6 +860,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -898,6 +913,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-strip"
     search_context:
       ENV{PATH}:
@@ -935,6 +951,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -987,6 +1004,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ld"
     search_context:
       ENV{PATH}:
@@ -1024,6 +1042,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1076,6 +1095,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-nm"
     search_context:
       ENV{PATH}:
@@ -1113,6 +1133,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1165,6 +1186,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-readelf"
     search_context:
       ENV{PATH}:
@@ -1202,6 +1224,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1254,6 +1277,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-dlltool"
@@ -1284,6 +1308,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-dlltool"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-dlltool"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-dlltool"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/dlltool"
       - "/Users/majanyberg/zephyrproject/.venv/bin/dlltool"
       - "/Users/majanyberg/.rbenv/shims/dlltool"
@@ -1313,6 +1338,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/dlltool"
       - "/Users/majanyberg/development/flutter/bin/dlltool"
       - "/Users/majanyberg/.local/bin/dlltool"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -1350,6 +1376,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1402,6 +1429,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-addr2line"
     search_context:
       ENV{PATH}:
@@ -1439,6 +1467,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1491,6 +1520,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-tapi"
@@ -1521,6 +1551,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-tapi"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-tapi"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-tapi"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-tapi"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/tapi"
       - "/Users/majanyberg/zephyrproject/.venv/bin/tapi"
       - "/Users/majanyberg/.rbenv/shims/tapi"
@@ -1550,6 +1581,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/tapi"
       - "/Users/majanyberg/development/flutter/bin/tapi"
       - "/Users/majanyberg/.local/bin/tapi"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1587,6 +1619,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1641,6 +1674,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-14.2"
@@ -1671,6 +1705,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14"
@@ -1700,6 +1735,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar14"
@@ -1729,6 +1765,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
@@ -1766,6 +1803,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -1820,6 +1858,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-14.2"
@@ -1850,6 +1889,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14"
@@ -1879,6 +1919,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib14"
@@ -1908,6 +1949,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
@@ -1945,6 +1987,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2009,6 +2052,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2103,6 +2147,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2179,6 +2224,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-14.2"
@@ -2209,6 +2255,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-14"
@@ -2238,6 +2285,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar14"
@@ -2267,6 +2315,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
@@ -2304,6 +2353,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2358,6 +2408,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-14.2"
@@ -2388,6 +2439,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14.2"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-14"
@@ -2417,6 +2469,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-14"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib14"
@@ -2446,6 +2499,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib14"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib14"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib14"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
@@ -2483,6 +2537,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2550,6 +2605,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-"
@@ -2580,6 +2636,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ar-"
@@ -2609,6 +2666,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ar-"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ar-"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
@@ -2646,6 +2704,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2700,6 +2759,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-"
@@ -2730,6 +2790,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/zephyrproject/.venv/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.rbenv/shims/arm-none-eabi-gcc-ranlib-"
@@ -2759,6 +2820,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/development/flutter/bin/arm-none-eabi-gcc-ranlib-"
       - "/Users/majanyberg/.local/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/arm-none-eabi-gcc-ranlib-"
     found: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
@@ -2796,6 +2858,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_FIND_ROOT_PATH: "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1"
   -
@@ -2807,8 +2870,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-Nv9Q4i"
-      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-Nv9Q4i"
+      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-0NWyK7"
+      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-0NWyK7"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
       CMAKE_C_FLAGS_DEBUG: "-Og -g"
@@ -2819,12 +2882,12 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-Nv9Q4i'
+        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-0NWyK7'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ecf63/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ecf63.dir/build.make CMakeFiles/cmTC_ecf63.dir/build
-        Building C object CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o
-        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e9660/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e9660.dir/build.make CMakeFiles/cmTC_e9660.dir/build
+        Building C object CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -2832,8 +2895,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ecf63.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccur5Ldi.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e9660.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccM33GkJ.s
         GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -2850,14 +2913,14 @@ events:
          /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 37d23b2e3347d18c1231e07805cbe085
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccur5Ldi.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccM33GkJ.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_ecf63.elf
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf63.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e9660.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9660.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
         COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
@@ -2868,11 +2931,11 @@ events:
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_ecf63.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_ecf63.elf.'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cclhlT4N.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_ecf63.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_e9660.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_e9660.elf.'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccrpcRmV.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_e9660.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o
         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_ecf63.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_ecf63.elf.'
-        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o -o cmTC_ecf63.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_e9660.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_e9660.elf.'
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o -o cmTC_e9660.elf
         
       exitCode: 0
   -
@@ -2905,12 +2968,12 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-Nv9Q4i']
+        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-0NWyK7']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ecf63/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ecf63.dir/build.make CMakeFiles/cmTC_ecf63.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e9660/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e9660.dir/build.make CMakeFiles/cmTC_e9660.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -2918,8 +2981,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ecf63.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccur5Ldi.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e9660.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccM33GkJ.s]
         ignore line: [GNU C17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -2936,14 +2999,14 @@ events:
         ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 37d23b2e3347d18c1231e07805cbe085]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccur5Ldi.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccM33GkJ.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_ecf63.elf]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf63.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e9660.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9660.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
@@ -2954,17 +3017,17 @@ events:
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_ecf63.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_ecf63.elf.']
-        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cclhlT4N.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_ecf63.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_e9660.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_e9660.elf.']
+        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccrpcRmV.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_e9660.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o]
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cclhlT4N.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccrpcRmV.res] ==> ignore
           arg [--sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ecf63.elf] ==> ignore
+          arg [cmTC_e9660.elf] ==> ignore
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
@@ -2973,11 +3036,11 @@ events:
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o] ==> ignore
         ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_ecf63.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_ecf63.elf.']
-        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_ecf63.dir/CMakeCCompilerABI.c.o -o cmTC_ecf63.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_e9660.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_e9660.elf.']
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_e9660.dir/CMakeCCompilerABI.c.o -o cmTC_e9660.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
@@ -3002,8 +3065,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-ojDj6J"
-      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-ojDj6J"
+      source: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-XHaOI5"
+      binary: "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-XHaOI5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
       CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
@@ -3015,12 +3078,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-ojDj6J'
+        Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-XHaOI5'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3583e/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3583e.dir/build.make CMakeFiles/cmTC_3583e.dir/build
-        Building CXX object CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o
-        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f979/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1f979.dir/build.make CMakeFiles/cmTC_1f979.dir/build
+        Building CXX object CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
         Target: arm-none-eabi
@@ -3028,8 +3091,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3583e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc4oZmU7.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1f979.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cccwQj1O.s
         GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -3052,14 +3115,14 @@ events:
          /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 27b9f5562618372de894011fc251f42d
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc4oZmU7.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cccwQj1O.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_3583e.elf
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3583e.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_1f979.elf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f979.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
         COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
@@ -3070,11 +3133,11 @@ events:
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
         COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_3583e.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_3583e.elf.'
-         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccPBfk3G.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_3583e.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_1f979.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_1f979.elf.'
+         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccT4wrZH.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_1f979.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o
         /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_3583e.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_3583e.elf.'
-        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3583e.elf
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_1f979.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_1f979.elf.'
+        /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1f979.elf
         
       exitCode: 0
   -
@@ -3113,12 +3176,12 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-ojDj6J']
+        ignore line: [Change Dir: '/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/CMakeFiles/CMakeScratch/TryCompile-XHaOI5']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3583e/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3583e.dir/build.make CMakeFiles/cmTC_3583e.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f979/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1f979.dir/build.make CMakeFiles/cmTC_1f979.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
         ignore line: [Target: arm-none-eabi]
@@ -3126,8 +3189,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3583e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc4oZmU7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1f979.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cccwQj1O.s]
         ignore line: [GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -3150,14 +3213,14 @@ events:
         ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 27b9f5562618372de894011fc251f42d]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/']
-        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cc4oZmU7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/']
+        ignore line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o /var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//cccwQj1O.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_3583e.elf]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3583e.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_1f979.elf]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f979.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
@@ -3168,17 +3231,17 @@ events:
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
         ignore line: [COMPILER_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_3583e.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_3583e.elf.']
-        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccPBfk3G.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_3583e.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_1f979.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_1f979.elf.']
+        link line: [ /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccT4wrZH.res --sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_1f979.elf -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o]
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccPBfk3G.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/9b/3lp511dj7qg8v241yn_4xzpm0000gn/T//ccT4wrZH.res] ==> ignore
           arg [--sysroot=/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
           arg [-X] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_3583e.elf] ==> ignore
+          arg [cmTC_1f979.elf] ==> ignore
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
@@ -3187,11 +3250,11 @@ events:
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
           arg [-L/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
           arg [--build-id=none] ==> ignore
-          arg [CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
         ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_3583e.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_3583e.elf.']
-        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_3583e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3583e.elf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_1f979.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_1f979.elf.']
+        ignore line: [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_1f979.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1f979.elf]
         ignore line: []
         ignore line: []
         collapse library dir [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
@@ -3409,6 +3472,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3469,6 +3533,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3522,6 +3587,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/doxygen"
       - "/Users/majanyberg/development/flutter/bin/doxygen"
       - "/Users/majanyberg/.local/bin/doxygen"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/doxygen"
       - "/usr/local/bin/doxygen"
       - "/usr/local/sbin/doxygen"
       - "/usr/local/doxygen"
@@ -3583,6 +3649,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -3643,6 +3710,7 @@ events:
       - "/Users/majanyberg/.dotnet/tools/"
       - "/Users/majanyberg/development/flutter/bin/"
       - "/Users/majanyberg/.local/bin/"
+      - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3716,6 +3784,7 @@ events:
         - "/Users/majanyberg/.local/bin"
         - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
         - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:

@@ -127,21 +127,17 @@ int main(void)
             /* LED LOGIC (FIXED)                                      */
             /* ------------------------------------------------------ */
 
-            gpio_pin_set_dt(
-                &motion_led,
-                (alarm_flags & ALARM_MOTION_BIT) ? blink : 0);
+            gpio_pin_set_dt(&motion_led,
+                            (alarm_flags & ALARM_MOTION_BIT) ? 1 : 0);
 
-            gpio_pin_set_dt(
-                &temp_led,
-                (alarm_flags & ALARM_TEMP_BIT) ? blink : 0);
+            gpio_pin_set_dt(&temp_led,
+                            (alarm_flags & ALARM_TEMP_BIT) ? 1 : 0);
 
-            gpio_pin_set_dt(
-                &sound_led,
-                (alarm_flags & ALARM_SOUND_BIT) ? blink : 0);
+            gpio_pin_set_dt(&sound_led,
+                            (alarm_flags & ALARM_SOUND_BIT) ? 1 : 0);
 
-            gpio_pin_set_dt(
-                &humidity_led,
-                (alarm_flags & ALARM_HUMIDITY_BIT) ? blink : 0);
+            gpio_pin_set_dt(&humidity_led,
+                            (alarm_flags & ALARM_HUMIDITY_BIT) ? 1 : 0);
 
             if (alarm_flags)
             {
