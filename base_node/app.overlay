@@ -12,51 +12,48 @@
  *
  * If using original Pico (RP2040), change board to rpi_pico.
  */
-
 / {
-    /* Register our custom sensor node device */
     sensor_node: sensor_node {
         compatible = "zephyr,sensor-node";
         uart-dev = <&uart0>;
         status = "okay";
     };
 
-    /* Alias for the alert LED (optional: use onboard LED or external) */
     aliases {
-        alert-led = &alert_led;
+        motion-led = &motion_led;
+        temp-led = &temp_led;
+        sound-led = &sound_led;
+        humidity-led = &humidity_led;
     };
-
+/*Changed to multiple leds for easier debugging and detection*/
     leds {
         compatible = "gpio-leds";
-        alert_led: alert_led {
-            /*
-             * GP25 = onboard LED on Raspberry Pi Pico / Pico 2.
-             * For Maker Pi Pico, the onboard LED may be on a
-             * different pin — adjust accordingly.
-             *
-             * For an external LED, change the pin number to
-             * whichever GPIO you wired it to.
-             */
-            gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
-            label = "Alert LED";
+
+        motion_led: motion_led {
+            gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;
+            label = "Motion LED";
+        };
+
+        temp_led: temp_led {
+            gpios = <&gpio0 18 GPIO_ACTIVE_HIGH>;
+            label = "Temperature LED";
+        };
+
+        sound_led: sound_led {
+            gpios = <&gpio0 19 GPIO_ACTIVE_HIGH>;
+            label = "Sound LED";
+        };
+
+        humidity_led: humidity_led {
+            gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+            label = "Humidity LED";
         };
     };
 };
 
-/*
- * UART0 configuration.
- *
- * Default Pico UART0 pins:
- *   TX = GP0  (Base Node does not need to transmit, but still defined)
- *   RX = GP1  (receives frames from Sensor Node)
- *
- * Baud rate MUST match the Sensor Node firmware.
- * 9600 is a safe default; increase to 115200 if both sides support it.
- */
 &uart0 {
     status = "okay";
     current-speed = <115200>;
     pinctrl-0 = <&uart0_default>;
     pinctrl-names = "default";
 };
-

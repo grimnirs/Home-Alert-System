@@ -7,11 +7,14 @@
 
 	/* node '/aliases' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:20 */
 	aliases {
-		die-temp0 = &die_temp;  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:21 */
-		led0 = &led0;           /* in zephyr/boards/raspberrypi/common/rpi_pico-led.dtsi:27 */
-		pwm-led0 = &pwm_led0;   /* in zephyr/boards/raspberrypi/common/rpi_pico-led.dtsi:28 */
-		watchdog0 = &wdt0;      /* in zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2.dtsi:25 */
-		alert-led = &alert_led; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:26 */
+		die-temp0 = &die_temp;        /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:21 */
+		led0 = &led0;                 /* in zephyr/boards/raspberrypi/common/rpi_pico-led.dtsi:27 */
+		pwm-led0 = &pwm_led0;         /* in zephyr/boards/raspberrypi/common/rpi_pico-led.dtsi:28 */
+		watchdog0 = &wdt0;            /* in zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2.dtsi:25 */
+		motion-led = &motion_led;     /* in Home-Alert-System/base_node/build/zephyr/app.overlay:23 */
+		temp-led = &temp_led;         /* in Home-Alert-System/base_node/build/zephyr/app.overlay:24 */
+		sound-led = &sound_led;       /* in Home-Alert-System/base_node/build/zephyr/app.overlay:25 */
+		humidity-led = &humidity_led; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:26 */
 	};
 
 	/* node '/cpus' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:24 */
@@ -373,11 +376,11 @@
 			resets = < &reset 0x1a >;             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:274 */
 			interrupts = < 0x21 0x7 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:275 */
 			interrupt-names = "uart0";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:276 */
-			status = "okay";                      /* in Home-Alert-System/base_node/build/zephyr/app.overlay:57 */
-			current-speed = < 0x1c200 >;          /* in Home-Alert-System/base_node/build/zephyr/app.overlay:58 */
-			pinctrl-0 = < &uart0_default >;       /* in Home-Alert-System/base_node/build/zephyr/app.overlay:59 */
-			pinctrl-names = "default";            /* in Home-Alert-System/base_node/build/zephyr/app.overlay:60 */
-			phandle = < 0x1f >;                   /* in Home-Alert-System/base_node/build/zephyr/app.overlay:20 */
+			status = "okay";                      /* in Home-Alert-System/base_node/build/zephyr/app.overlay:55 */
+			current-speed = < 0x1c200 >;          /* in Home-Alert-System/base_node/build/zephyr/app.overlay:56 */
+			pinctrl-0 = < &uart0_default >;       /* in Home-Alert-System/base_node/build/zephyr/app.overlay:57 */
+			pinctrl-names = "default";            /* in Home-Alert-System/base_node/build/zephyr/app.overlay:58 */
+			phandle = < 0x1f >;                   /* in Home-Alert-System/base_node/build/zephyr/app.overlay:18 */
 		};
 
 		/* node '/soc/uart@40078000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2350.dtsi:280 */
@@ -615,7 +618,7 @@
 
 		/* node '/pin-controller/uart0_default' defined in zephyr/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:8 */
 		uart0_default: uart0_default {
-			phandle = < 0x17 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:59 */
+			phandle = < 0x17 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:57 */
 
 			/* node '/pin-controller/uart0_default/group1' defined in zephyr/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:9 */
 			group1 {
@@ -724,10 +727,28 @@
 			label = "LED";               /* in zephyr/boards/raspberrypi/common/rpi_pico-led.dtsi:13 */
 		};
 
-		/* node '/leds/alert_led' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:31 */
-		alert_led: alert_led {
-			gpios = < &gpio0 0x19 0x0 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:40 */
-			label = "Alert LED";         /* in Home-Alert-System/base_node/build/zephyr/app.overlay:41 */
+		/* node '/leds/motion_led' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:32 */
+		motion_led: motion_led {
+			gpios = < &gpio0 0x14 0x0 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:33 */
+			label = "Motion LED";        /* in Home-Alert-System/base_node/build/zephyr/app.overlay:34 */
+		};
+
+		/* node '/leds/temp_led' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:37 */
+		temp_led: temp_led {
+			gpios = < &gpio0 0x12 0x0 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:38 */
+			label = "Temperature LED";   /* in Home-Alert-System/base_node/build/zephyr/app.overlay:39 */
+		};
+
+		/* node '/leds/sound_led' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:42 */
+		sound_led: sound_led {
+			gpios = < &gpio0 0x13 0x0 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:43 */
+			label = "Sound LED";         /* in Home-Alert-System/base_node/build/zephyr/app.overlay:44 */
+		};
+
+		/* node '/leds/humidity_led' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:47 */
+		humidity_led: humidity_led {
+			gpios = < &gpio0 0x15 0x0 >; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:48 */
+			label = "Humidity LED";      /* in Home-Alert-System/base_node/build/zephyr/app.overlay:49 */
 		};
 	};
 
@@ -777,10 +798,10 @@
 		           < 0x1c 0x0 &gpio0 0x1c 0x0 >;   /* in zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2.dtsi:33 */
 	};
 
-	/* node '/sensor_node' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:18 */
+	/* node '/sensor_node' defined in Home-Alert-System/base_node/build/zephyr/app.overlay:16 */
 	sensor_node: sensor_node {
-		compatible = "zephyr,sensor-node"; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:19 */
-		uart-dev = < &uart0 >;             /* in Home-Alert-System/base_node/build/zephyr/app.overlay:20 */
-		status = "okay";                   /* in Home-Alert-System/base_node/build/zephyr/app.overlay:21 */
+		compatible = "zephyr,sensor-node"; /* in Home-Alert-System/base_node/build/zephyr/app.overlay:17 */
+		uart-dev = < &uart0 >;             /* in Home-Alert-System/base_node/build/zephyr/app.overlay:18 */
+		status = "okay";                   /* in Home-Alert-System/base_node/build/zephyr/app.overlay:19 */
 	};
 };

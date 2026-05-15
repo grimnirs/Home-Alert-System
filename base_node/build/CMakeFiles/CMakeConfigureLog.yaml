@@ -5208,3 +5208,358 @@ events:
         - "/opt/homebrew/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/majanyberg/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/majanyberg/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/"
+    found: "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/majanyberg/zephyrproject/zephyr-sdk-0.16.6/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/majanyberg/zephyrproject/.venv/bin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/usr/local/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Users/majanyberg/.rbenv/shims"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pmk/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Users/majanyberg/development/flutter/bin"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/majanyberg/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/majanyberg/.local/bin"
+        - "/Users/majanyberg/.gem/ruby/3.2.0/bin"
+        - "/Users/majanyberg/.nvm/versions/node/v22.22.0/bin"
+        - "/Users/majanyberg/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...

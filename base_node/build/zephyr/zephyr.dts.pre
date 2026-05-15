@@ -843,30 +843,46 @@ pico_serial: &uart0 {};
 # 23 "/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2_rp2350a_m33.dts" 2
 # 0 "<command-line>" 2
 # 1 "./app.overlay" 1
-# 16 "./app.overlay"
+# 15 "./app.overlay"
 / {
-
     sensor_node: sensor_node {
         compatible = "zephyr,sensor-node";
         uart-dev = <&uart0>;
         status = "okay";
     };
 
-
     aliases {
-        alert-led = &alert_led;
+        motion-led = &motion_led;
+        temp-led = &temp_led;
+        sound-led = &sound_led;
+        humidity-led = &humidity_led;
     };
 
     leds {
         compatible = "gpio-leds";
-        alert_led: alert_led {
-# 40 "./app.overlay"
-            gpios = <&gpio0 25 (0 << 0)>;
-            label = "Alert LED";
+
+        motion_led: motion_led {
+            gpios = <&gpio0 20 (0 << 0)>;
+            label = "Motion LED";
+        };
+
+        temp_led: temp_led {
+            gpios = <&gpio0 18 (0 << 0)>;
+            label = "Temperature LED";
+        };
+
+        sound_led: sound_led {
+            gpios = <&gpio0 19 (0 << 0)>;
+            label = "Sound LED";
+        };
+
+        humidity_led: humidity_led {
+            gpios = <&gpio0 21 (0 << 0)>;
+            label = "Humidity LED";
         };
     };
 };
-# 56 "./app.overlay"
+
 &uart0 {
     status = "okay";
     current-speed = <115200>;

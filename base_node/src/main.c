@@ -13,6 +13,7 @@
  *   2 blinks = environmental anomaly
  *   3 blinks = abnormal sound
  */
+
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
@@ -28,34 +29,24 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 /* Devicetree handles                                                 */
 /* ------------------------------------------------------------------ */
 
-/* Sensor node defined in app.overlay */
 #define SENSOR_NODE DT_NODELABEL(sensor_node)
 
-/* Alert LED alias from app.overlay */
-#define ALERT_LED_NODE DT_ALIAS(alert_led)
+#define MOTION_LED_NODE DT_ALIAS(motion_led)
+#define TEMP_LED_NODE DT_ALIAS(temp_led)
+#define SOUND_LED_NODE DT_ALIAS(sound_led)
+#define HUMIDITY_LED_NODE DT_ALIAS(humidity_led)
 
-static const struct gpio_dt_spec alert_led =
-    GPIO_DT_SPEC_GET(ALERT_LED_NODE, gpios);
+static const struct gpio_dt_spec motion_led =
+    GPIO_DT_SPEC_GET(MOTION_LED_NODE, gpios);
 
-/* ------------------------------------------------------------------ */
-/* LED helper                                                         */
-/* ------------------------------------------------------------------ */
+static const struct gpio_dt_spec temp_led =
+    GPIO_DT_SPEC_GET(TEMP_LED_NODE, gpios);
 
-/*
- * Blink LED a given number of times.
- * Each blink = 150 ms ON + 150 ms OFF
- */
-static void blink_led(const struct gpio_dt_spec *led, int times)
-{
-    for (int i = 0; i < times; i++)
-    {
-        gpio_pin_set_dt(led, 1);
-        k_msleep(150);
+static const struct gpio_dt_spec sound_led =
+    GPIO_DT_SPEC_GET(SOUND_LED_NODE, gpios);
 
-        gpio_pin_set_dt(led, 0);
-        k_msleep(150);
-    }
-}
+static const struct gpio_dt_spec humidity_led =
+    GPIO_DT_SPEC_GET(HUMIDITY_LED_NODE, gpios);
 
 /* ------------------------------------------------------------------ */
 /* Main                                                               */
@@ -63,76 +54,35 @@ static void blink_led(const struct gpio_dt_spec *led, int times)
 
 int main(void)
 {
-    /* -------------------------------------------------------------- */
-    /* Get sensor-node device                                         */
-    /* -------------------------------------------------------------- */
     k_sleep(K_SECONDS(2));
-    
-    printk("\n");
-    printk("========================================\n");
-    printk(" Initializing Base Node...\n");
-    printk("========================================\n\n");
 
-    /* Get sensor-node driver device */
-    printk("[INIT] Getting sensor-node device...\n");
-    const struct device *sensor_dev = DEVICE_DT_GET(SENSOR_NODE);
-
-    if (!sensor_dev)
-    {
-        printk("[ERROR] Sensor node device handle is NULL!\n");
-        return -ENODEV;
-    }
-
-    if (!device_is_ready(sensor_dev))
-    {
-        printk("[ERROR] Sensor node device not ready!\n");
-        printk("[ERROR] Device: %s, ready: %d\n",
-               sensor_dev->name, device_is_ready(sensor_dev));
-        return -ENODEV;
-    }
-
-    printk("[INIT] Sensor node device ready: %s\n", sensor_dev->name);
-
-    /* -------------------------------------------------------------- */
-    /* Configure alert LED                                            */
-    /* -------------------------------------------------------------- */
-    printk("[INIT] Configuring alert LED...\n");
-    if (!gpio_is_ready_dt(&alert_led))
-    {
-        printk("[ERROR] Alert LED GPIO not ready!\n");
-        return -ENODEV;
-    }
-
-    if (gpio_pin_configure_dt(&alert_led, GPIO_OUTPUT_INACTIVE) < 0)
-    {
-        printk("[ERROR] Failed to configure alert LED pin\n");
-        return -EIO;
-    }
-
-    printk("[INIT] Alert LED configured on pin %d\n", alert_led.pin);
-
-    printk("\n");
-    printk("========================================\n");
+    printk("\n========================================\n");
     printk(" Home Security Base Node Started\n");
     printk("========================================\n\n");
 
-    /* Prevent alarm spam */
-    uint8_t previous_alarm_flags = 0;
+    const struct device *sensor_dev = DEVICE_DT_GET(SENSOR_NODE);
 
-    /* -------------------------------------------------------------- */
-    /* Main loop                                                      */
-    /* -------------------------------------------------------------- */
+    if (!device_is_ready(sensor_dev))
+    {
+        printk("Sensor node not ready\n");
+        return -ENODEV;
+    }
+
+    gpio_pin_configure_dt(&motion_led, GPIO_OUTPUT_INACTIVE);
+    gpio_pin_configure_dt(&temp_led, GPIO_OUTPUT_INACTIVE);
+    gpio_pin_configure_dt(&sound_led, GPIO_OUTPUT_INACTIVE);
+    gpio_pin_configure_dt(&humidity_led, GPIO_OUTPUT_INACTIVE);
+
+    bool blink = false;
 
     while (1)
     {
+        blink = !blink;
+
         int ret = sensor_sample_fetch(sensor_dev);
 
         if (ret == 0)
         {
-            /* ------------------------------------------------------ */
-            /* Read sensor channels                                   */
-            /* ------------------------------------------------------ */
-
             struct sensor_value temp;
             struct sensor_value humidity;
             struct sensor_value sound;
@@ -161,110 +111,42 @@ int main(void)
 
             uint8_t alarm_flags = (uint8_t)alarm.val1;
 
-            /* ------------------------------------------------------ */
-            /* Print normal sensor readings                           */
-            /* ------------------------------------------------------ */
-
-            printk("[BASE] ");
-            printk("Temp: %d.%02d C | ",
-                   temp.val1,
-                   temp.val2 / 10000);
+            printk("[BASE] Temp: %d.%02d C | ",
+                   temp.val1, temp.val2 / 10000);
 
             printk("Humidity: %d.%02d %% | ",
-                   humidity.val1,
-                   humidity.val2 / 10000);
+                   humidity.val1, humidity.val2 / 10000);
 
-            printk("Sound: %d | ",
-                   sound.val1);
+            printk("Sound: %d | ", sound.val1);
 
-            printk("Distance: %d cm | ",
-                   dist.val1);
+            printk("Distance: %d cm | ", dist.val1);
 
-            printk("Alarm: 0x%02x\n",
-                   alarm_flags);
+            printk("Alarm: 0x%02x\n", alarm_flags);
 
             /* ------------------------------------------------------ */
-            /* Alarm handling                                         */
+            /* LED LOGIC (FIXED)                                      */
             /* ------------------------------------------------------ */
 
-            if ((alarm_flags != 0) &&
-                (alarm_flags != previous_alarm_flags))
+            gpio_pin_set_dt(
+                &motion_led,
+                (alarm_flags & ALARM_MOTION_BIT) ? blink : 0);
+
+            gpio_pin_set_dt(
+                &temp_led,
+                (alarm_flags & ALARM_TEMP_BIT) ? blink : 0);
+
+            gpio_pin_set_dt(
+                &sound_led,
+                (alarm_flags & ALARM_SOUND_BIT) ? blink : 0);
+
+            gpio_pin_set_dt(
+                &humidity_led,
+                (alarm_flags & ALARM_HUMIDITY_BIT) ? blink : 0);
+
+            if (alarm_flags)
             {
-                printk("\n");
-                printk("========================================\n");
-                printk(" *** ALARM TRIGGERED ***\n");
-                printk("========================================\n");
-                printk("ALARM\n");
-
-                /* Motion alarm */
-                if (alarm_flags & ALARM_MOTION_BIT)
-                {
-                    printk("-> Motion detected\n");
-                }
-
-                /* Temperature alarm */
-                if (alarm_flags & ALARM_TEMP_BIT)
-                {
-                    printk("-> Temperature threshold exceeded\n");
-                }
-
-                /* Humidity alarm */
-                if (alarm_flags & ALARM_HUMIDITY_BIT)
-                {
-                    printk("-> Humidity threshold exceeded\n");
-                }
-
-                /* Sound alarm */
-                if (alarm_flags & ALARM_SOUND_BIT)
-                {
-                    printk("-> Abnormal sound detected\n");
-                }
-
-                printk("\n");
-                printk("Current Sensor Values:\n");
-
-                printk("Temperature : %d.%02d C\n",
-                       temp.val1,
-                       temp.val2 / 10000);
-
-                printk("Humidity    : %d.%02d %%\n",
-                       humidity.val1,
-                       humidity.val2 / 10000);
-
-                printk("Sound Level : %d\n",
-                       sound.val1);
-
-                printk("Distance    : %d cm\n",
-                       dist.val1);
-
-                printk("Alarm Flags : 0x%02x\n",
-                       alarm_flags);
-
-                printk("========================================\n\n");
-
-                /* -------------------------------------------------- */
-                /* LED blink patterns                                 */
-                /* -------------------------------------------------- */
-
-                if (alarm_flags & ALARM_MOTION_BIT)
-                {
-                    /* Highest priority */
-                    blink_led(&alert_led, 1);
-                }
-                else if (alarm_flags &
-                         (ALARM_TEMP_BIT |
-                          ALARM_HUMIDITY_BIT))
-                {
-                    blink_led(&alert_led, 2);
-                }
-                else if (alarm_flags & ALARM_SOUND_BIT)
-                {
-                    blink_led(&alert_led, 3);
-                }
+                printk("ALARM ACTIVE\n");
             }
-
-            /* Store previous alarm state */
-            previous_alarm_flags = alarm_flags;
         }
         else if (ret == -EAGAIN)
         {
@@ -275,11 +157,6 @@ int main(void)
             printk("ERROR: sensor_sample_fetch failed (%d)\n", ret);
         }
 
-        /*
-         * Small delay to avoid tight polling loop.
-         */
-        k_msleep(100);
+        k_msleep(300);
     }
-
-    return 0;
 }
