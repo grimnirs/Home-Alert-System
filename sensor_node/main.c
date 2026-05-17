@@ -95,41 +95,30 @@ static uint32_t calc_hum(int32_t adc_h, bme_calib *c, int32_t t_fine)
 {
     int32_t temp_scaled, var1, var2, var3, var4, var5, var6, hum_comp;
 
-    // 1. Calculate temperature in degC scaled by 100
-    // This matches the datasheet's temp_scaled = (int32_t)temp_comp
     temp_scaled = (((int32_t)t_fine * 5) + 128) >> 8;
 
-    // 2. var1 calculation
     var1 = (int32_t)adc_h -
            ((int32_t)((int32_t)c->par_h1 << 4)) -
            (((temp_scaled * (int32_t)c->par_h3) / ((int32_t)100)) >> 1);
 
-    // 3. var2 calculation
     var2 = ((int32_t)c->par_h2 *
             (((temp_scaled * (int32_t)c->par_h4) / ((int32_t)100)) +
              (((temp_scaled * ((temp_scaled * (int32_t)c->par_h5) / ((int32_t)100))) >> 6) / ((int32_t)100)) +
              ((int32_t)(1 << 14)))) >>
            10;
 
-    // 4. var3 calculation
     var3 = var1 * var2;
 
-    // 5. var4 calculation
     var4 = (((int32_t)c->par_h6 << 7) +
             ((temp_scaled * (int32_t)c->par_h7) / ((int32_t)100))) >>
            4;
 
-    // 6. var5 calculation (Notice the shift >> 10 is outside the square)
     var5 = ((var3 >> 14) * (var3 >> 14)) >> 10;
 
-    // 7. var6 calculation
     var6 = (var4 * var5) >> 1;
 
-    // 8. Final humidity calculation (hum_comp)
-    // Matches: (((var3 + var6) >> 10) * 1000) >> 12
     hum_comp = (((var3 + var6) >> 10) * ((int32_t)1000)) >> 12;
 
-    // 9. Clamping to [0% - 100%] in milli-percent
     if (hum_comp > 100000)
         hum_comp = 100000;
     else if (hum_comp < 0)
@@ -138,7 +127,7 @@ static uint32_t calc_hum(int32_t adc_h, bme_calib *c, int32_t t_fine)
     return (uint32_t)hum_comp;
 }
 
-// READ CALIB
+// READ CALIBRATION
 void read_calib(bme_calib *c)
 {
     uint8_t c1[25], c2[16];
@@ -224,8 +213,8 @@ bme680_data_t read_bme680(bme_calib *cal)
     bme680_data_t data = {temp, hum};
     return data;
 }
-// UART
 
+// UART
 void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist, uint8_t alarm)
 {
 
