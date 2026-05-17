@@ -5,12 +5,13 @@
  *
  * Adjust the pin numbers below to match your actual wiring:
  *   - uart0: receives frames from the Sensor Node
- *   - alert_led: GPIO for the alarm LED
+ *   - motion_led: GPIO 20 for the motion detection
+ *   - temp_led: GPIO 18 for the motion detection
+ *   - sound_led: GPIO 19 for the motion detection
+ *   - humidity_led: GPIO 21 for the motion detection
  *
  * Build with:
  *   west build -b rpi_pico2/rp2350a/m33 -- -DDTC_OVERLAY_FILE=app.overlay
- *
- * If using original Pico (RP2040), change board to rpi_pico.
  */
 / {
     sensor_node: sensor_node {
@@ -25,6 +26,7 @@
         sound-led = &sound_led;
         humidity-led = &humidity_led;
     };
+
 /*Changed to multiple leds for easier debugging and detection*/
     leds {
         compatible = "gpio-leds";

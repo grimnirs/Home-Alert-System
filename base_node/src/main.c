@@ -1,17 +1,15 @@
 /*
- * Copyright (c) 2025 Group 8
- * SPDX-License-Identifier: Apache-2.0
- *
  * Home Security Base Node – main application.
  *
  * Periodically fetches sensor data from the custom sensor-node driver,
- * prints the values to the serial monitor, and drives an alert LED with
- * different blink patterns depending on which alarm flags are set.
+ * prints the values to the serial monitor, and drives four different alert LEDs
+ * depending on which alarm flags are set.
  *
- * Alarm priority:
- *   1 blink  = motion / intrusion
- *   2 blinks = environmental anomaly
- *   3 blinks = abnormal sound
+ * Alarm LEDs:
+ *   - motion_led: GPIO 20 for the motion detection
+ *   - temp_led: GPIO 18 for the motion detection
+ *   - sound_led: GPIO 19 for the motion detection
+ *   - humidity_led: GPIO 21 for the motion detection
  */
 
 #include <zephyr/kernel.h>
@@ -25,9 +23,7 @@
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
-/* ------------------------------------------------------------------ */
-/* Devicetree handles                                                 */
-/* ------------------------------------------------------------------ */
+// Devicetree handles
 
 #define SENSOR_NODE DT_NODELABEL(sensor_node)
 
@@ -48,17 +44,13 @@ static const struct gpio_dt_spec sound_led =
 static const struct gpio_dt_spec humidity_led =
     GPIO_DT_SPEC_GET(HUMIDITY_LED_NODE, gpios);
 
-/* ------------------------------------------------------------------ */
-/* Main                                                               */
-/* ------------------------------------------------------------------ */
+// Main
 
 int main(void)
 {
     k_sleep(K_SECONDS(2));
 
-    printk("\n========================================\n");
     printk(" Home Security Base Node Started\n");
-    printk("========================================\n\n");
 
     const struct device *sensor_dev = DEVICE_DT_GET(SENSOR_NODE);
 
@@ -123,9 +115,7 @@ int main(void)
 
             printk("Alarm: 0x%02x\n", alarm_flags);
 
-            /* ------------------------------------------------------ */
-            /* LED LOGIC (FIXED)                                      */
-            /* ------------------------------------------------------ */
+            // LED logic
 
             gpio_pin_set_dt(&motion_led,
                             (alarm_flags & ALARM_MOTION_BIT) ? 1 : 0);

@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2025 Group 8
- * SPDX-License-Identifier: Apache-2.0
  *
  * Zephyr sensor driver for Home Security Base Node.
  *
@@ -28,23 +26,22 @@
 
 LOG_MODULE_REGISTER(sensor_node, CONFIG_SENSOR_LOG_LEVEL);
 
-/* ------------------------------------------------------------------ */
-/*  Per-instance run-time data                                        */
-/* ------------------------------------------------------------------ */
+
+// Per-instance run-time data
 struct sensor_node_data
 {
     /* UART device handle (resolved once during init) */
     const struct device *uart_dev;
 
-    /* --- ISR ring state --- */
+    // ISR ring state
     uint8_t rx_buf[SENSOR_NODE_FRAME_LEN]; /* assembling frame   */
     uint8_t rx_idx;                        /* write position     */
 
-    /* --- Double buffer: ISR writes, fetch reads --- */
+    //Double buffer: ISR writes, fetch reads
     uint8_t ready_buf[SENSOR_NODE_FRAME_LEN];
     struct k_sem frame_sem; /* given by ISR       */
 
-    /* --- Parsed sensor values (filled by fetch) --- */
+    // Parsed sensor values (filled by fetch)
     int16_t temperature;  /* scaled value from sensor node        */
     uint16_t humidity;    /* scaled humidity ×100                  */
     uint8_t sound;        /* ADC 0-255                            */
@@ -52,17 +49,14 @@ struct sensor_node_data
     uint8_t alarm_status; /* bit0=motion, bit1=temp, bit2=sound, bit4=humidity */
 };
 
-/* ------------------------------------------------------------------ */
-/*  Per-instance config (from devicetree, constant)                   */
-/* ------------------------------------------------------------------ */
+// Per-instance config (from devicetree, constant)
 struct sensor_node_config
 {
     const struct device *uart_dev;
 };
 
-/* ================================================================== */
-/*  UART interrupt callback                                           */
-/* ================================================================== */
+
+// UART interrupt callback
 static void sensor_node_uart_isr(const struct device *uart_dev,
                                  void *user_data)
 {
@@ -116,9 +110,7 @@ static void sensor_node_uart_isr(const struct device *uart_dev,
     }
 }
 
-/* ================================================================== */
-/*  Sensor API: sample_fetch                                          */
-/* ================================================================== */
+// Sensor API: sample_fetch
 static int sensor_node_sample_fetch(const struct device *dev,
                                     enum sensor_channel chan)
 {
@@ -154,9 +146,7 @@ static int sensor_node_sample_fetch(const struct device *dev,
     return 0;
 }
 
-/* ================================================================== */
-/*  Sensor API: channel_get                                           */
-/* ================================================================== */
+// Sensor API: channel_get
 static int sensor_node_channel_get(const struct device *dev,
                                    enum sensor_channel chan,
                                    struct sensor_value *val)
@@ -208,9 +198,8 @@ static int sensor_node_channel_get(const struct device *dev,
     return 0;
 }
 
-/* ================================================================== */
-/*  Driver init                                                       */
-/* ================================================================== */
+
+// Driver init
 static int sensor_node_init(const struct device *dev)
 {
     struct sensor_node_data *data = dev->data;
@@ -252,17 +241,14 @@ static int sensor_node_init(const struct device *dev)
     return 0;
 }
 
-/* ================================================================== */
-/*  Driver API table                                                  */
-/* ================================================================== */
+
+// Driver API table
 static const struct sensor_driver_api sensor_node_api = {
     .sample_fetch = sensor_node_sample_fetch,
     .channel_get = sensor_node_channel_get,
 };
 
-/* ================================================================== */
-/*  Instantiation macro (one instance per devicetree node)            */
-/* ================================================================== */
+// Instantiation macro (one instance per devicetree node)
 #define SENSOR_NODE_INST(inst)                                        \
                                                                       \
     static struct sensor_node_data sensor_node_data_##inst;           \

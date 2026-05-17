@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2025 Group 8
- * SPDX-License-Identifier: Apache-2.0
  *
  * Custom Zephyr sensor driver for the Home Security Base Node.
  * Receives 10-byte UART frames from the Sensor Node and exposes
@@ -18,7 +16,7 @@
  * Note: SENSOR_CHAN_HUMIDITY and SENSOR_CHAN_DISTANCE are standard Zephyr channels.
  */
 enum sensor_node_channel {
-    /** Sound intensity level (0–255 ADC level) */
+    // Sound intensity level (0–255 ADC level)
     SENSOR_CHAN_SOUND = SENSOR_CHAN_PRIV_START,
 
     /**
