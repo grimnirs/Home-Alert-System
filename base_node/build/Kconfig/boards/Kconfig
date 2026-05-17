@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/Users/majanyberg/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2/Kconfig"

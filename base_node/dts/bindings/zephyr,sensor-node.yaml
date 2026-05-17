@@ -1,0 +1,12 @@
+
+description: "Zephyr sensor node device"
+
+compatible: "zephyr,sensor-node"
+
+include: base.yaml
+
+properties:
+  uart-dev:
+    type: phandle
+    required: true
+    description: "UART device used by the sensor node driver"

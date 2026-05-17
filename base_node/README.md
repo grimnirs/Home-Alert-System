@@ -23,6 +23,7 @@ base_node/
 ## How It Works
 
 1. The **Sensor Node** periodically sends a **10-byte UART frame**:
+
    ```
    | 0xAA | Temp_H | Temp_L | Gas_H | Gas_L | Sound | Dist_H | Dist_L | Alarm | 0x55 |
    ```
@@ -41,8 +42,8 @@ base_node/
 ## Build & Flash
 
 ```bash
-# Pico 2 (RP2350)
-west build -b rpi_pico2/rp2350 base_node -- -DDTC_OVERLAY_FILE=app.overlay
+# Pico 2 (RP2350A, Cortex-M33)
+west build -b rpi_pico2/rp2350a/m33 base_node -- -DDTC_OVERLAY_FILE=app.overlay
 
 # Original Pico (RP2040)
 west build -b rpi_pico base_node -- -DDTC_OVERLAY_FILE=app.overlay
@@ -62,6 +63,7 @@ west flash
 ## Sensor Node Requirements
 
 When sending frames, the Sensor Node must ensure:
+
 - Multi-byte fields are packed in **big-endian** order (high byte first)
 - Temperature is `int16_t`; other fields are `uint16_t` / `uint8_t`
 - `alarm_status` uses a bitfield: `BIT(0)=motion, BIT(1)=gas, BIT(2)=sound`

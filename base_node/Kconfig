@@ -1,0 +1,4 @@
+source "Kconfig.zephyr"
+
+# Uses the absolute path to your driver's Kconfig
+source "$(APPLICATION_SOURCE_DIR)/drivers/sensor_node/Kconfig"
