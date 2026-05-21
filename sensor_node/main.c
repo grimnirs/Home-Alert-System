@@ -21,6 +21,10 @@
 #define SOUND_ADC_CH 0
 #define SOUND_GPIO 26
 
+// Interrupt output - pulled high when any alarm condition is active
+// Wire this pin to GPIO 22 on the base node (Pico 2)
+#define INTR_PIN 6
+
 // BME680
 // I2C Configuration
 #define I2C_PORT i2c0
@@ -41,12 +45,26 @@
 #define BME_INTERVAL 3000
 #define SOUND_INTERVAL 200
 
-// alarm thresholds
-#define TEMP_MAX 40.0f     // degrees Celsius
-#define HUMIDITY_MAX 80.0f // %
-#define HUMIDITY_MIN 20.0f // %
-// TODO: Add a lower limit to mimic wispering
-#define SOUND_ALARM_THRESHOLD 30 // sound_i = raw ADC >> 4, range 0..63
+/*
+ * Config command protocol (base node -> sensor node over UART RX)
+ * Frame format: [0xBB][CMD][VAL_H][VAL_L][0x66]  (5 bytes, big-endian value)
+ */
+#define CMD_START        0xBB
+#define CMD_END          0x66
+#define CMD_FRAME_LEN    5
+
+#define CMD_DIST_THRESH  0x01   // proximity alert threshold (cm, uint16)
+#define CMD_TEMP_MAX     0x02   // temperature upper limit (°C × 100, int16)
+#define CMD_SOUND_THRESH 0x03   // sound threshold (scaled 0..63, VAL_L only)
+#define CMD_HUM_MAX      0x04   // humidity upper bound (% × 100, uint16)
+#define CMD_HUM_MIN      0x05   // humidity lower bound (% × 100, uint16)
+
+// alarm thresholds - runtime-configurable via CMD frames from the base node
+static float    threshold_dist      = 50.0f;  // cm
+static int16_t  threshold_temp      = 4000;   // 40.00 °C (stored ×100)
+static uint8_t  threshold_sound     = 30;     // scaled ADC range 0..63
+static uint16_t threshold_hum_max   = 8000;   // 80.00%
+static uint16_t threshold_hum_min   = 2000;   // 20.00%
 
 // calib struct
 typedef struct
@@ -71,6 +89,12 @@ typedef struct
     float humidity;
 } bme680_data_t;
 
+// command RX state machine
+typedef struct {
+    uint8_t buf[CMD_FRAME_LEN];
+    uint8_t idx;
+} cmd_state_t;
+
 // I2C HELPERS
 void write_reg(uint8_t reg, uint8_t val)
 {
@@ -93,6 +117,7 @@ int32_t calc_temp(int32_t adc_t, bme_calib *c)
     c->t_fine = var2 + var3;
     return (c->t_fine * 5 + 128) >> 8;
 }
+
 static uint32_t calc_hum(int32_t adc_h, bme_calib *c, int32_t t_fine)
 {
     int32_t temp_scaled, var1, var2, var3, var4, var5, var6, hum_comp;
@@ -216,7 +241,7 @@ bme680_data_t read_bme680(bme_calib *cal)
     return data;
 }
 
-// UART
+// UART data frame (sensor node -> base node)
 void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist, uint8_t alarm)
 {
 
@@ -241,6 +266,71 @@ void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist, 
     uart_write_blocking(UART_ID, frame, 10);
 }
 
+// Update a threshold from a received config command
+static void apply_command(uint8_t cmd, uint16_t val)
+{
+    switch (cmd)
+    {
+    case CMD_DIST_THRESH:
+        threshold_dist = (float)val;
+        printf("[CFG] dist threshold -> %.0f cm\n", threshold_dist);
+        break;
+    case CMD_TEMP_MAX:
+        threshold_temp = (int16_t)val;
+        printf("[CFG] temp max -> %.2f C\n", threshold_temp / 100.0f);
+        break;
+    case CMD_SOUND_THRESH:
+        threshold_sound = (uint8_t)(val & 0x3F);
+        printf("[CFG] sound threshold -> %u\n", threshold_sound);
+        break;
+    case CMD_HUM_MAX:
+        threshold_hum_max = val;
+        printf("[CFG] hum max -> %.2f%%\n", threshold_hum_max / 100.0f);
+        break;
+    case CMD_HUM_MIN:
+        threshold_hum_min = val;
+        printf("[CFG] hum min -> %.2f%%\n", threshold_hum_min / 100.0f);
+        break;
+    default:
+        printf("[CFG] unknown cmd 0x%02x, ignoring\n", cmd);
+        break;
+    }
+}
+
+// Non-blocking poll for incoming config frames on UART RX
+static void poll_commands(cmd_state_t *cs)
+{
+    while (uart_is_readable(UART_ID))
+    {
+        uint8_t b = uart_getc(UART_ID);
+
+        if (cs->idx == 0)
+        {
+            if (b == CMD_START)
+            {
+                cs->buf[0] = b;
+                cs->idx = 1;
+            }
+            // discard anything that isn't a start byte
+        }
+        else
+        {
+            cs->buf[cs->idx++] = b;
+
+            if (cs->idx == CMD_FRAME_LEN)
+            {
+                if (cs->buf[CMD_FRAME_LEN - 1] == CMD_END)
+                {
+                    uint16_t val = (uint16_t)((cs->buf[2] << 8) | cs->buf[3]);
+                    apply_command(cs->buf[1], val);
+                }
+                // reset regardless of validity
+                cs->idx = 0;
+            }
+        }
+    }
+}
+
 int main()
 {
     stdio_init_all();
@@ -249,6 +339,11 @@ int main()
     uart_init(UART_ID, BAUD_RATE);
     gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
     gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+
+    // Interrupt output - driven high when any alarm is active
+    gpio_init(INTR_PIN);
+    gpio_set_dir(INTR_PIN, GPIO_OUT);
+    gpio_put(INTR_PIN, 0);
 
     // Ultrasonic
     gpio_init(TRIG_PIN);
@@ -286,19 +381,24 @@ int main()
     // Timers
     absolute_time_t t_ultra = make_timeout_time_ms(DIST_INTERVAL);
     absolute_time_t t_sound = make_timeout_time_ms(SOUND_INTERVAL);
-    absolute_time_t t_bme = make_timeout_time_ms(BME_INTERVAL);
+    absolute_time_t t_bme   = make_timeout_time_ms(BME_INTERVAL);
 
-    float dist = 0;
+    float dist    = 0;
     uint16_t sound = 0;
-    float temp = 0;
-    float hum = 0;
+    float temp    = 0;
+    float hum     = 0;
     uint8_t sound_i = 0;
 
-    bool dist_ready = false;
+    bool dist_ready  = false;
     bool sound_ready = false;
-    bool bme_ready = false;
+    bool bme_ready   = false;
+
+    cmd_state_t cs = {0};
+
     while (true)
     {
+        // Check for configuration commands from the base node before reading sensors
+        poll_commands(&cs);
 
         if (absolute_time_diff_us(get_absolute_time(), t_ultra) <= 0)
         {
@@ -325,24 +425,29 @@ int main()
         {
             bme680_data_t bme680 = read_bme680(&cal);
             temp = bme680.temperature;
-            hum = bme680.humidity;
+            hum  = bme680.humidity;
             bme_ready = true;
             t_bme = make_timeout_time_ms(BME_INTERVAL);
         }
 
-        // alarm logic
+        // alarm logic - thresholds are now configurable at runtime
         uint8_t alarm = 0;
-        if (dist_ready && dist < 50.0f)
+
+        if (dist_ready && dist < threshold_dist)
             alarm |= (1 << 0);
 
-        if (bme_ready && (temp > TEMP_MAX))
+        if (bme_ready && (temp > threshold_temp / 100.0f))
             alarm |= (1 << 1);
 
-        if (sound_ready && sound_i > SOUND_ALARM_THRESHOLD)
+        if (sound_ready && sound_i > threshold_sound)
             alarm |= (1 << 2);
 
-        if (bme_ready && (hum > HUMIDITY_MAX || hum < HUMIDITY_MIN))
+        if (bme_ready && (hum * 100.0f > threshold_hum_max || hum * 100.0f < threshold_hum_min))
             alarm |= (1 << 4);
+
+        // Drive interrupt line high when any alarm is active so the base node
+        // can react immediately via GPIO interrupt rather than polling UART frames
+        gpio_put(INTR_PIN, alarm ? 1 : 0);
 
         // Send UART frame
         send_uart_frame(temp, hum, sound, (uint16_t)dist, alarm);

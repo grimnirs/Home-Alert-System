@@ -5,11 +5,17 @@
  * prints the values to the serial monitor, and drives four different alert LEDs
  * depending on which alarm flags are set.
  *
+ * Interrupt demo:
+ *   On startup we register a SENSOR_TRIG_THRESHOLD callback that fires
+ *   immediately when the sensor node asserts its interrupt GPIO line.
+ *   We also send a configuration command to tighten the distance threshold
+ *   to 30 cm so the interrupt is easier to trigger during testing.
+ *
  * Alarm LEDs:
- *   - motion_led: GPIO 20 for the motion detection
- *   - temp_led: GPIO 18 for the motion detection
- *   - sound_led: GPIO 19 for the motion detection
- *   - humidity_led: GPIO 21 for the motion detection
+ *   - motion_led:   GPIO 20
+ *   - temp_led:     GPIO 18
+ *   - sound_led:    GPIO 19
+ *   - humidity_led: GPIO 21
  */
 
 #include <zephyr/kernel.h>
@@ -27,9 +33,9 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 #define SENSOR_NODE DT_NODELABEL(sensor_node)
 
-#define MOTION_LED_NODE DT_ALIAS(motion_led)
-#define TEMP_LED_NODE DT_ALIAS(temp_led)
-#define SOUND_LED_NODE DT_ALIAS(sound_led)
+#define MOTION_LED_NODE   DT_ALIAS(motion_led)
+#define TEMP_LED_NODE     DT_ALIAS(temp_led)
+#define SOUND_LED_NODE    DT_ALIAS(sound_led)
 #define HUMIDITY_LED_NODE DT_ALIAS(humidity_led)
 
 static const struct gpio_dt_spec motion_led =
@@ -43,6 +49,19 @@ static const struct gpio_dt_spec sound_led =
 
 static const struct gpio_dt_spec humidity_led =
     GPIO_DT_SPEC_GET(HUMIDITY_LED_NODE, gpios);
+
+/*
+ * Interrupt callback - called from GPIO ISR context when the sensor node
+ * pulls its INTR_PIN high (i.e. any alarm condition becomes active).
+ * Keep this short; heavy work should be deferred to a thread if needed.
+ */
+static void alarm_trigger_cb(const struct device *dev,
+                             const struct sensor_trigger *trig)
+{
+    ARG_UNUSED(dev);
+    ARG_UNUSED(trig);
+    printk("[INTERRUPT] Sensor node alarm line asserted!\n");
+}
 
 // Main
 
@@ -65,13 +84,37 @@ int main(void)
     gpio_pin_configure_dt(&sound_led, GPIO_OUTPUT_INACTIVE);
     gpio_pin_configure_dt(&humidity_led, GPIO_OUTPUT_INACTIVE);
 
-    bool blink = false;
+    /*
+     * Register an interrupt trigger so we get an immediate callback the
+     * moment the sensor node asserts its alarm line over GPIO, without
+     * waiting for the next UART frame poll cycle.
+     */
+    struct sensor_trigger alarm_trig = {
+        .type = SENSOR_TRIG_THRESHOLD,
+        .chan = SENSOR_CHAN_ALARM_STATUS,
+    };
+    int ret = sensor_trigger_set(sensor_dev, &alarm_trig, alarm_trigger_cb);
+    if (ret < 0) {
+        printk("WARNING: Could not register alarm trigger (%d)\n", ret);
+    } else {
+        printk("[DEMO] Interrupt trigger registered on GPIO\n");
+    }
+
+    /*
+     * Example of threshold configuration: lower the proximity alert distance
+     * to 30 cm by sending a command frame to the sensor node over UART.
+     * The sensor node applies the new value immediately on next loop iteration.
+     */
+    struct sensor_value dist_thresh = { .val1 = 30, .val2 = 0 };
+    sensor_attr_set(sensor_dev,
+                    SENSOR_CHAN_DISTANCE,
+                    (enum sensor_attribute)SENSOR_ATTR_DIST_THRESH,
+                    &dist_thresh);
+    printk("[DEMO] Distance alert threshold set to 30 cm\n");
 
     while (1)
     {
-        blink = !blink;
-
-        int ret = sensor_sample_fetch(sensor_dev);
+        ret = sensor_sample_fetch(sensor_dev);
 
         if (ret == 0)
         {

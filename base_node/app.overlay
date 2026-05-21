@@ -4,11 +4,13 @@
  * Board: Raspberry Pi Pico 2  (or Maker Pi Pico)
  *
  * Adjust the pin numbers below to match your actual wiring:
- *   - uart0: receives frames from the Sensor Node
- *   - motion_led: GPIO 20 for the motion detection
- *   - temp_led: GPIO 18 for the motion detection
- *   - sound_led: GPIO 19 for the motion detection
- *   - humidity_led: GPIO 21 for the motion detection
+ *   - uart0:        receives data frames from the Sensor Node (TX/RX)
+ *                   also used to send configuration commands back
+ *   - intr-gpios:   GPIO 22, wired to INTR_PIN (GPIO 6) on the Sensor Node
+ *   - motion_led:   GPIO 20
+ *   - temp_led:     GPIO 18
+ *   - sound_led:    GPIO 19
+ *   - humidity_led: GPIO 21
  *
  * Build with:
  *   west build -b rpi_pico2/rp2350a/m33 -- -DDTC_OVERLAY_FILE=app.overlay
@@ -17,13 +19,14 @@
     sensor_node: sensor_node {
         compatible = "zephyr,sensor-node";
         uart-dev = <&uart0>;
+        intr-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
         status = "okay";
     };
 
     aliases {
-        motion-led = &motion_led;
-        temp-led = &temp_led;
-        sound-led = &sound_led;
+        motion-led   = &motion_led;
+        temp-led     = &temp_led;
+        sound-led    = &sound_led;
         humidity-led = &humidity_led;
     };
 
