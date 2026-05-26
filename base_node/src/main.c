@@ -69,14 +69,14 @@ static void alarm_trigger_cb(const struct device *dev,
 
 int main(void)
 {   
-    /* 启用 USB，必须在任何 printk 之前 */
+    
     const struct device *usb_dev = DEVICE_DT_GET(DT_NODELABEL(cdc_acm_uart0));
     if (!device_is_ready(usb_dev)) {
         return -ENODEV;
     }
     usb_enable(NULL);
-    k_sleep(K_SECONDS(1)); /* 等待 USB 枚举完成 */
-    
+    k_sleep(K_SECONDS(1)); 
+
     k_sleep(K_SECONDS(2));
 
     printk(" Home Security Base Node Started\n");
