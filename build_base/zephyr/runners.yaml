@@ -1,0 +1,47 @@
+# Available runners configured by board.cmake.
+runners:
+- openocd
+- probe-rs
+- jlink
+- uf2
+
+# Default flash runner if --runner is not given.
+flash-runner: openocd
+
+# Default debug runner if --runner is not given.
+debug-runner: openocd
+
+# Common runner configuration values.
+config:
+  board_dir: C:/Users/20958/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2
+  # Build outputs:
+  elf_file: zephyr.elf
+  hex_file: zephyr.hex
+  bin_file: zephyr.bin
+  uf2_file: zephyr.uf2
+  # Host tools:
+  gdb: C:/Users/20958/Downloads/zephyr-sdk-1.0.1_windows-x86_64_minimal/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py.exe
+  openocd: C:/Users/20958/Downloads/zephyr-sdk-1.0.1_windows-x86_64_minimal/zephyr-sdk-1.0.1/hosttools/openocd/bin/openocd.exe
+  openocd_search:
+    - C:/Users/20958/Downloads/zephyr-sdk-1.0.1_windows-x86_64_minimal/zephyr-sdk-1.0.1/hosttools/openocd/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  openocd:
+    - --cmd-load
+    - flash write_image erase
+    - --cmd-verify
+    - verify_image
+    - --cmd-pre-init
+    - source [find interface/cmsis-dap.cfg]
+    - --cmd-pre-init
+    - source [find target/rp2350.cfg]
+    - --cmd-pre-init
+    - set_adapter_speed_if_not_set 5000
+  probe-rs:
+    - --chip=RP235x
+  jlink:
+    - --dt-flash=y
+    - --device=RP2350_M33_0
+  uf2:
+    - --board-id=RP2350

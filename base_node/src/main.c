@@ -24,6 +24,8 @@
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/logging/log.h>
+#include <zephyr/usb/usb_device.h>  // 
+#include <zephyr/drivers/uart.h>    // 
 
 #include "../drivers/sensor_node/sensor_node.h"
 
@@ -66,7 +68,15 @@ static void alarm_trigger_cb(const struct device *dev,
 // Main
 
 int main(void)
-{
+{   
+    /* 启用 USB，必须在任何 printk 之前 */
+    const struct device *usb_dev = DEVICE_DT_GET(DT_NODELABEL(cdc_acm_uart0));
+    if (!device_is_ready(usb_dev)) {
+        return -ENODEV;
+    }
+    usb_enable(NULL);
+    k_sleep(K_SECONDS(1)); /* 等待 USB 枚举完成 */
+    
     k_sleep(K_SECONDS(2));
 
     printk(" Home Security Base Node Started\n");

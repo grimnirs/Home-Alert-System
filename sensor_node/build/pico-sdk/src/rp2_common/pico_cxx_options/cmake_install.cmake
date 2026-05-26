@@ -1,8 +1,8 @@
-# Install script for directory: /Users/majanyberg/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options
+# Install script for directory: C:/Users/20958/Desktop/Home-Alert-System/sensor_node/build/_deps/pico_sdk-src/src/rp2_common/pico_cxx_options
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sensor_node")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/majanyberg/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "D:/msy32/mingw64/bin/arm-none-eabi-objdump.exe")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/majanyberg/zephyrproject/Home-Alert-System/sensor_node/build/pico-sdk/src/rp2_common/pico_cxx_options/install_local_manifest.txt"
+  file(WRITE "C:/Users/20958/Desktop/Home-Alert-System/sensor_node/build/pico-sdk/src/rp2_common/pico_cxx_options/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

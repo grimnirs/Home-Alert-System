@@ -1,0 +1,5 @@
+west:
+  command: C:\Users\20958\zephyrproject\.venv\Scripts\west build -d C:/Users/20958/Desktop/Home-Alert-System/build_tests
+    -b native_sim C:/Users/20958/Desktop/Home-Alert-System/base_node/tests --pristine
+  topdir: C:\Users\20958\zephyrproject
+  version: 1.5.0

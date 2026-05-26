@@ -93,8 +93,9 @@ static void sensor_node_uart_isr(const struct device *uart_dev,
     uint8_t byte;
 
     /* Drain the FIFO one byte at a time */
-    while (uart_irq_update(uart_dev) &&
-           uart_irq_rx_ready(uart_dev))
+    uart_irq_update(uart_dev);
+
+    while (uart_irq_rx_ready(uart_dev))
     {
 
         if (uart_fifo_read(uart_dev, &byte, 1) != 1)

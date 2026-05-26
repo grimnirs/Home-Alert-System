@@ -1,0 +1,63 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/20958/Desktop/Home-Alert-System/base_node'
+    source-dir: 'C:/Users/20958/Desktop/Home-Alert-System/base_node'
+  board:
+    name: 'rpi_pico2'
+    path:
+     - 'C:/Users/20958/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2'
+    qualifiers: 'rp2350a/m33'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/dts/bindings'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/20958/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2_rp2350a_m33.dts'
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/app.overlay'
+    include-dirs:
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/20958/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/20958/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/20958/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/20958/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/20958/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/20958/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/20958/zephyrproject/zephyr/include'
+     - 'C:/Users/20958/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/20958/zephyrproject/zephyr/dts'
+    user-files:
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/app.overlay'
+  kconfig:
+    files:
+     - 'C:/Users/20958/zephyrproject/zephyr/boards/raspberrypi/rpi_pico2/rpi_pico2_rp2350a_m33_defconfig'
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/prj.conf'
+    user-files:
+     - 'C:/Users/20958/Desktop/Home-Alert-System/base_node/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/20958/Downloads/zephyr-sdk-1.0.1_windows-x86_64_minimal/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: 'C:/Users/20958/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\20958\zephyrproject\.venv\Scripts\west build -d C:/Users/20958/Desktop/Home-Alert-System/build_base -b rpi_pico2/rp2350a/m33 C:/Users/20958/Desktop/Home-Alert-System/base_node --pristine'
+  topdir: 'C:\Users\20958\zephyrproject'
+  version: '1.5.0'

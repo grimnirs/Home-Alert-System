@@ -60,6 +60,8 @@
 #define CMD_HUM_MIN      0x05   // humidity lower bound (% × 100, uint16)
 
 // alarm thresholds - runtime-configurable via CMD frames from the base node
+static bool     irq_enabled  = true;
+static uint8_t  irq_mask     = 0x17;  // bit0+1+2+4 = all alarms
 static float    threshold_dist      = 50.0f;  // cm
 static int16_t  threshold_temp      = 4000;   // 40.00 °C (stored ×100)
 static uint8_t  threshold_sound     = 30;     // scaled ADC range 0..63
@@ -247,7 +249,7 @@ void send_uart_frame(float temp, float humidity, uint16_t sound, uint16_t dist, 
 
     int16_t temp_i = (int16_t)(temp * 100);
     int16_t hum_i = (int16_t)(humidity * 100);
-    uint8_t sound_i = sound >> 4;
+    uint8_t sound_i = sound >> 6;
     uint16_t dist_i = dist;
 
     uint8_t frame[10];
@@ -291,6 +293,14 @@ static void apply_command(uint8_t cmd, uint16_t val)
         threshold_hum_min = val;
         printf("[CFG] hum min -> %.2f%%\n", threshold_hum_min / 100.0f);
         break;
+    case 0x06:
+    irq_enabled = (val != 0);
+    printf("[CFG] IRQ_ENABLE -> %u\n", irq_enabled);
+    break;
+case 0x07:
+    irq_mask = (uint8_t)(val & 0xFF);
+    printf("[CFG] IRQ_MASK -> 0x%02x\n", irq_mask);
+    break;
     default:
         printf("[CFG] unknown cmd 0x%02x, ignoring\n", cmd);
         break;
@@ -413,7 +423,7 @@ int main()
         if (absolute_time_diff_us(get_absolute_time(), t_sound) <= 0)
         {
             sound = read_sound();
-            sound_i = sound >> 4;
+            sound_i = sound >> 6;
             sound_ready = true;
 
             printf("Sound: %u (scaled %u)\n", sound, sound_i);
@@ -447,7 +457,7 @@ int main()
 
         // Drive interrupt line high when any alarm is active so the base node
         // can react immediately via GPIO interrupt rather than polling UART frames
-        gpio_put(INTR_PIN, alarm ? 1 : 0);
+        gpio_put(INTR_PIN, (irq_enabled && (alarm & irq_mask)) ? 1 : 0);
 
         // Send UART frame
         send_uart_frame(temp, hum, sound, (uint16_t)dist, alarm);
